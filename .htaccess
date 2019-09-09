@@ -1,0 +1,12 @@
+# ERROR xxx REDIRECT URL
+ErrorDocument 404 /crhsrobotics2020/error/404
+
+# DEFAULT PAGE
+
+DirectoryIndex index.php home
+
+# REMOVES EXTENSION
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
