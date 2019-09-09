@@ -1,24 +1,24 @@
 ---
-name: Bug report
-about: Create a report to help us improve our development
-title: New bug report
-labels: bug
+name: Design issue report
+about: Create a report to help us improve our design
+title: New design issue report
+labels: ''
 assignees: ''
 
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+A clear and concise description of what doesn't look right.
 
 **To Reproduce**
-Indicate the steps necessary to repeat the behavior. Ex.:
+Indicate where to find this. Ex.:
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
-4. See error
+4. See issue
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**Potential solutions**
+A clear and concise description of what you believe can make it look better.
 
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
