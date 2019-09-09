@@ -2,7 +2,7 @@
 name: Design issue report
 about: Create a report to help us improve our design
 title: New design issue report
-labels: ''
+labels: Design issue
 assignees: ''
 
 ---
