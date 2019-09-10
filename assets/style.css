@@ -93,13 +93,17 @@ nav {
 .btmnav {
 	padding: 30px
 }
-.btmnav>a, .btmnav>div>button {
-	margin-left: 30px;
+.btmnav>div>button {
 	color: white;
 	font-size: 20px;
+	padding: 0
 }
-.btmnav>a, .btmnav>div>button {
+.btmnav>div>button {
+	cursor: default
+}
+.btmnav>a, .btmnav>div {
 	margin-left: 45px;
+	font-size: 20px;
 	color: white;
 	font-family: arial;
 	float: middle;
@@ -127,12 +131,19 @@ nav {
 		display: none
 	}
 }
-#navbar>a, #navbar>div>.dropbtn {
+#navbar>a, #navbar>div {
 	margin-left: 24px;
 	color: white;
 	font-family: arial;
 	text-decoration: none;
 	font-family: 'Roboto Condensed', sans-serif;
+}
+#navbar>div>button {
+	color: white;
+	padding: 0
+}
+#navbar>div>button {
+	cursor: default
 }
 
 /*ALL NAVBARS*/
@@ -167,7 +178,7 @@ nav {
 		width: 100%
 	}
 	.btmnav>a, .btmnav>div>button {
-		margin-bottom: 10px
+		margin-bottom: 20px
 	}
 	.btmnav>a:hover, .btmnav>div>button:hover, .btmnav>div:hover {
 		color: #c9c9c9
