@@ -26,17 +26,17 @@
 				<div class="dropdown">
 				  <button id="<?php if($title =='CRHS Robotics 2020 - ESPN Articles'){echo 'active';}else{echo '';} ?>" class="dropbtn">Articles <i class="fas fa-caret-right"></i></button>
 				  <div class="dropdown-content">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
+					<a href="articles#">Link 1</a>
+					<a href="articles#">Link 2</a>
+					<a href="articles#">Link 3</a>
 				  </div>
 				</div>
 				<div class="dropdown">
 				  <button id="<?php if($title =='CRHS Robotics 2020 - ESPN Team'){echo 'active';}else{echo '';} ?>" class="dropbtn">Team <i class="fas fa-caret-right"></i></button>
 				  <div class="dropdown-content">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
+					<a href="team#">Link 1</a>
+					<a href="team#">Link 2</a>
+					<a href="team#">Link 3</a>
 				  </div>
 				</div>
 			</nav>
@@ -46,17 +46,17 @@
 				<div class="dropdown">
 				  <button id="<?php if($title =='CRHS Robotics 2020 - ESPN Articles'){echo 'active';}else{echo '';} ?>" class="dropbtn">Articles <i class="fas fa-caret-right"></i></button>
 				  <div class="dropdown-content">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
+					<a href="articles#">Link 1</a>
+					<a href="articles#">Link 2</a>
+					<a href="articles#">Link 3</a>
 				  </div>
 				</div>
 				<div class="dropdown">
 				  <button id="<?php if($title =='CRHS Robotics 2020 - ESPN Team'){echo 'active';}else{echo '';} ?>" class="dropbtn">Team <i class="fas fa-caret-right"></i></button>
 				  <div class="dropdown-content">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
+					<a href="team#">Link 1</a>
+					<a href="team#">Link 2</a>
+					<a href="team#">Link 3</a>
 				  </div>
 				</div>
 			</nav>
