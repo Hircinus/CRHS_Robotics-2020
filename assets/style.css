@@ -2,6 +2,7 @@
 
 :root {
 	--main-dark-bg: #222;
+	--body-bg: #EDEEF0
 }
 
 /*GENERAL (large bodies)*/
@@ -13,7 +14,7 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background-color: #EDEEF0!important
+	background-color: var(--body-bg)!important
 }
 .content {
 	margin-left: 10px;
@@ -45,7 +46,7 @@ nav {
 	display: none;
 	position: absolute;
 	background-color: #fff;
-	min-width: 160px;
+	min-width: 100px;
 	overflow: auto;
 	-webkit-box-shadow: 0px 2px 4px 0px var(--main-dark-bg);
 	        box-shadow: 0px 2px 4px 0px var(--main-dark-bg);
@@ -55,11 +56,15 @@ nav {
 }
 .dropdown-content a {
 	color: black;
-	padding: 8px 10px;
+	padding: 12px 14px;
 	text-decoration: none;
 	display: block;
-	font-size: 16px;
+	font-size: 18px;
 	font-family: 'Roboto Condensed', sans-serif;
+}
+#navbar>div>.dropdown-content>a {
+	font-size: 16px;
+	padding: 10px 12px;
 }
 .dropdown a:hover {
 	background-color: #c9c9c9;
@@ -93,6 +98,10 @@ nav {
 .btmnav {
 	padding: 30px
 }
+.btmnav>.navbar-brand>img {
+	height: 60px;
+	width: 60px
+}
 .btmnav>div>button {
 	color: white;
 	font-size: 20px;
@@ -101,21 +110,31 @@ nav {
 .btmnav>div>button {
 	cursor: default
 }
-.btmnav>a, .btmnav>div {
+.btmnav>a {
 	margin-left: 45px;
-	font-size: 20px;
+	font-size: 30px;
 	color: white;
-	font-family: arial;
 	float: middle;
 	text-decoration: none;
 	font-family: 'Roboto Condensed', sans-serif;
+}
+.btmnav>div>button {
+	font-size: 30px;
+	color: white;
+	float: middle;
+	text-decoration: none;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.btmnav>div {
+	margin-left: 45px;
+	float: middle;
 }
 
 /*TOPNAV (smaller nav that moves with user)*/
 
 #navbar {
 	position: fixed;
-	top: -50px;
+	top: -100px;
 	display: block;
 	-webkit-transition: top 0.3s;
 	-o-transition: top 0.3s;
@@ -123,8 +142,12 @@ nav {
 	z-index: 2;
 	padding: 15px;
 	background-color: var(--main-dark-bg);
-	-webkit-box-shadow: 0 0 5px 5px var(--main-dark-bg);
-	        box-shadow: 0 0 5px 5px var(--main-dark-bg)
+	-webkit-box-shadow: 0 5px 5px 5px var(--main-dark-bg);
+	        box-shadow: 0 5px 5px 5px var(--main-dark-bg)
+}
+#navbar>.navbar-brand>img {
+	height: 30px;
+	width: 30px
 }
 @media only screen and (max-width: 900px) {
 	#navbar {
@@ -134,13 +157,14 @@ nav {
 #navbar>a, #navbar>div {
 	margin-left: 24px;
 	color: white;
-	font-family: arial;
 	text-decoration: none;
+	font-size: 20px;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 #navbar>div>button {
 	color: white;
-	padding: 0
+	padding: 0;
+	font-size: 20px
 }
 #navbar>div>button {
 	cursor: default
@@ -154,7 +178,7 @@ nav {
 #active:hover {
 	color: white
 }
-#navbar>a:hover, #navbar>div>button:hover, .btmnav>a:hover, .btmnav>div>button:hover {
+#navbar>a:hover, #navbar>div:hover>button, .btmnav>a:hover, .btmnav>div:hover>button {
 	color: #c9c9c9;
 	text-decoration: none
 }
@@ -162,7 +186,7 @@ nav {
 	transform: rotate(0deg);
 	transition: transform 0.25s ease
 }
-#navbar>div>button:hover>.fa-caret-right, .btmnav>div>button:hover>.fa-caret-right {
+#navbar>div:hover>button>.fa-caret-right, .btmnav>div:hover>button>.fa-caret-right {
 	transform: rotate(90deg)
 }
 @media only screen and (max-width: 900px) {
@@ -185,13 +209,24 @@ nav {
 	}
 }
 
+/*SOCIAL MEDIA LINKS*/
+
+.social-link {
+	float: right;
+	margin-right: 20px;
+	color: white;
+}
+.social-link:hover {
+	color: #c9c9c9
+}
+
 /*Back to top button*/
 
 #backtop {
 	position: fixed;
-	right: -50px;
+	right: -100px;
 	bottom: 50px;
-	border: none;
+	border: 1px solid var(--body-bg);
 	border-radius: 10px;
 	height: 50px;
 	width: 50px;
@@ -203,8 +238,8 @@ nav {
 	padding: 10px;
 	color: white;
 	background-color: var(--main-dark-bg);
-	-webkit-box-shadow: 2px 2px 5px 0 var(--main-dark-bg);
-	        box-shadow: 2px 2px 5px 0 var(--main-dark-bg)
+	-webkit-box-shadow: 0 0 5px 5px var(--main-dark-bg);
+	        box-shadow: 0 0 5px 5px var(--main-dark-bg)
 }
 #backtop:hover {
 	animation: Jump 0.5s ease infinite
@@ -226,21 +261,28 @@ nav {
 
 /*ALL TEXT*/
 
+
+.info-link {
+	cursor: help;
+}
 .no_bullet {
 	list-style-type: none
 }
 .link {
-	color: red;
-	text-decoration: none;
-	-webkit-transition: border-bottom 0.25s ease;
-	-o-transition: border-bottom 0.25s ease;
-	transition: border-bottom 0.25s ease;
-	border-bottom: red 2px solid
+	color: #000;
+	text-decoration: underline;
 }
 .link:hover {
 	text-decoration: none;
-	color: red;
-	border-bottom: 2px solid transparent
+	color: #444
+}
+.light-link {
+	color: #fff;
+	text-decoration: underline;
+}
+.light-link:hover {
+	text-decoration: none;
+	color: #c9c9c9
 }
 .disclaimer {
 	border-radius: 15px;
@@ -278,13 +320,18 @@ footer {
 	width: 70%;
 	border-radius: 10px 10px 0 0;
 	background-color: var(--main-dark-bg);
+	box-shadow: 0 -5px 5px 5px var(--main-dark-bg);
 	color: #fff;
 	margin: auto;
-	padding: 5px 5px 30px 5px
+	padding: 5px 5px 15px 5px
+}
+@media only screen and (max-width: 991px) {
+	#footrow>div {
+		margin-bottom: 30px
+	}
 }
 .foot-div {
-	height: 2px;
-	border-radius: 25%;
+	height: 1px;
 	background-color: #c9c9c9
 }
 .footlink {
@@ -309,7 +356,7 @@ footer {
 	margin: 30px 30px 50px 30px
 }
 #footrow { /*Row containing the footer*/
-	margin: 30px 30px 0 30px
+	margin: 30px 30px 15px 30px
 }
 
 /*GRID (specifics of articles)*/
@@ -341,6 +388,30 @@ footer {
 #article>.card>img {
 	max-height: 250px;
 	width: auto
+}
+.parallax {
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px
+}
+.article-title {
+	font-family: impact;
+	font-size: 45px
+}
+.article-title-hr {
+	width: 80%;
+	float: left;
+	border: 3px solid var(--main-dark-bg)
+}
+.article-body {
+	font-family: georgia;
+	font-size: 17px;
+	line-height: 30px
 }
 
 /*IMPORTANT TAG*/
