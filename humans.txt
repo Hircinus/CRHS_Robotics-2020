@@ -1,0 +1,44 @@
+# humanstxt.org / for more info.
+
+
+C R H S  R O B O T I C S / 2 0 2 0
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+                                                                                                                          
+WEB TEAM
+///																														   
+Web designer and developer:
+	Jacob-Mahmoud Alfahad
+
+JOURNALISM TEAM
+///
+	
+MENTORS
+///
+Web mentor:
+	Ho Man Chan
+
+Director of CRHS Robotics:
+	Barry Dobbs
+
+Co-directors of CRHS Robotics:
+	Henrique
+	/
+	Mr. Graham
+	
+THANKS
+///
+	Duncan Bruens-Home
+	Briana Gilbert
+	https://www.w3schools.com (for reference)
+	https://developer.mozilla.org/en-US/ (for reference)
+	https://getbootstrap.com (for framework)
+	https://fontawesome.com/icons?d=gallery (for svg icons)
+	https://autoprefixer.github.io (for autoprefixing CSS automatically)
+	https://www.10bestdesign.com/dirtymarkup/ (markup cleaner)
+	https://www.degraeve.com/reference/specialcharacters.php (special characters reference)
+	https://www.minifyweb.com/minify-image/ (for minifying images)
+	https://www.000webhost.com/ (for public website hosting)
+	https://notepad-plus-plus.org (for code editor)
+	https://www.mamp.info/en/ (for local website hosting)
+	https://github.com (for cloud code storage and team organization and workflow)
+	https://gravit.io (for designing the favicon)
