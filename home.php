@@ -15,7 +15,7 @@ require 'layouts/header.php';
 <div id="row" class="row justify-content-center">
 	<div id="article" class="col-lg-6 col-md-9 col-sm-12 col-12">
 		<div class="card">
-		  <a href="article/1"><img class="img-fluid" src="assets/stock.jpg" alt="Card image cap"></a>
+		  <a href="article/01"><img class="img-fluid" src="assets/stock.jpg" alt="Card image cap"></a>
 		  <div class="card-body tech-article">
 			<a href="article/tech" class="tag">Tech</a>
 			<h5 class="card-title">An article</h5>
