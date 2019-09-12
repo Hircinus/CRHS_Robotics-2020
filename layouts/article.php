@@ -1,8 +1,10 @@
 	<div class="parallax"><style>.parallax {background-image: url("../assets/<?php echo $topbgimgsrc ?>");}</style></div>
 	<div class="container">
-		<div class="firstrow row">
+		<div class="firstrow row bg-light-j">
 			<div class="col-12">
 				<h2 class="article-title"><?php echo $articletitle ?></h2>
+				<h3 class="article-tag"><div class="<?php if($tag == 'Tech') { echo 'blue'; } else { echo ''; } ?>"><?php echo $tag ?></div></h3>
+				<em>Jacob Alfahad</em>
 			</div>
 			<div class="col-12">
 				<hr class="article-title-hr">

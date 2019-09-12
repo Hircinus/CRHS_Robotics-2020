@@ -26,7 +26,7 @@
 				<a class="footlink" target="_blank" href="how_to_make_a_site">I wanna make a site! <i class="fas fa-external-link-alt"></i></a>
 			</div>
 		</div>
-		<p class="text-center"><a class="light-link" href="../humans.txt" target="_blank">humans.txt</a></p>
+		<p class="text-center"><a class="light-link" href="../humans.txt" target="_blank">humans.txt <i class="fas fa-external-link-alt"></i></a></p>
 	</footer>
 	<button onclick="backToTop()" id="backtop"><i class="fas fa-caret-up"></i></button>
 	</div>
