@@ -26,6 +26,18 @@ nav {
 	background-color: var(--main-dark-bg)
 }
 
+/*MEDIA QUERIES*/
+
+@media print {
+	#navbar, #backtop {
+		display: none
+	}
+}
+.bg-light-j {
+	background-color: var(--body-bg)!important;
+	border-radius: 10px
+}
+
 /*DROPDOWN*/
 
 .dropbtn {
@@ -261,7 +273,9 @@ nav {
 
 /*ALL TEXT*/
 
-
+.fa-external-link-alt {
+	font-size: 13px!important
+}
 .info-link {
 	cursor: help;
 }
@@ -397,14 +411,26 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 50px
+  margin-bottom: -120px
 }
 .article-title {
 	font-family: impact;
-	font-size: 45px
+	margin-top: 10px;
+	width: 50%;
+	font-size: 45px;
+	border-bottom: 1px solid #222
+}
+.article-tag > .blue {
+	background-color: rgba(0,0,250,0.2);
+	color: darkblue;
+	border-radius: 10px;
+	padding: 5px
+}
+.article-tag {
+	float: right;
 }
 .article-title-hr {
-	width: 80%;
+	width: 100%;
 	float: left;
 	border: 3px solid var(--main-dark-bg)
 }
