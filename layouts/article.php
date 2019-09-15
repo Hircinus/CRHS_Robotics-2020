@@ -1,19 +1,19 @@
 	<div class="parallax"><style>.parallax {background-image: url("../assets/<?php echo $topbgimgsrc ?>");}</style></div>
 	<div class="container">
-		<div class="firstrow row bg-light-j">
+		<div id="firstrow" class="row bg-light-j">
 			<div class="col-12">
 				<h2 class="article-title"><?php echo $articletitle ?></h2>
-				<h3 class="article-tag"><div class="<?php if($tag == 'Tech') { echo 'blue'; } else { echo ''; } ?>"><?php echo $tag ?></div></h3>
+				<h3 class="article-tag"><a href="tech-list" class="<?php if($tag == 'Tech') { echo 'blue'; } else { echo ''; } ?>"><?php echo $tag ?></a></h3>
 				<em>Jacob Alfahad</em>
 			</div>
 			<div class="col-12">
 				<hr class="article-title-hr">
 			</div>
 		</div>
-		<div class="row justify-content-around">
+		<div id="row" class="row justify-content-around">
 			<p class="article-body"><?php echo $articlebody ?></p>
 		</div>
-		<div class="lastrow row justify-content-around">
+		<div id="lastrow" class="row justify-content-around">
 			<div class="col-6">
 				<p class="article-foot"><?php echo $articlefoot ?></p>
 			</div>

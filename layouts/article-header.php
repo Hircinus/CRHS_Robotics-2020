@@ -27,9 +27,8 @@
 				<div class="dropdown">
 				  <button id="<?php if($title =='CRHS Robotics 2020 - ESPN Articles'){echo 'active';}else{echo '';} ?>" class="dropbtn">Articles <i class="fas fa-caret-right"></i></button>
 				  <div class="dropdown-content">
-					<a href="../articles#">Link 1</a>
-					<a href="../articles#">Link 2</a>
-					<a href="../articles#">Link 3</a>
+					<a id="<?php if($title =='Tech articles - CRHS Robotics 2020'){echo 'active';}else{echo '';} ?>" href="../article/tech">Tech</a>
+					<a id="<?php if($title =='Important articles - CRHS Robotics 2020'){echo 'active';}else{echo '';} ?>" href="../article/important">Important</a>
 				  </div>
 				</div>
 				<div class="dropdown">
@@ -53,9 +52,8 @@
 				<div class="dropdown">
 				  <button id="<?php if($title =='CRHS Robotics 2020 - ESPN Articles'){echo 'active';}else{echo '';} ?>" class="dropbtn">Articles <i class="fas fa-caret-right"></i></button>
 				  <div class="dropdown-content">
-					<a href="../articles#">Link 1</a>
-					<a href="../articles#">Link 2</a>
-					<a href="../articles#">Link 3</a>
+					<a id="<?php if($title =='Tech articles - CRHS Robotics 2020'){echo 'active';}else{echo '';} ?>" href="../article/tech">Tech</a>
+					<a id="<?php if($title =='Important articles - CRHS Robotics 2020'){echo 'active';}else{echo '';} ?>" href="../article/important">Important</a>
 				  </div>
 				</div>
 				<div class="dropdown">
