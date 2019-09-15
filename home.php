@@ -9,7 +9,7 @@ require 'layouts/header.php';
 		<p>No it's not already finished.</p>
 	</div>
 	<div class="col-lg-3 col-md-2 col-sm-12 col-12">
-		Yeet
+      The CRC
 	</div>
 </div>
 <div id="row" class="row justify-content-center">
