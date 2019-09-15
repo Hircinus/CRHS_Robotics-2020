@@ -18,12 +18,57 @@ body {
 }
 .content {
 	margin-left: 10px;
+   -webkit-animation: fadeIn 0.15s ease forwards;
+           animation: fadeIn 0.15s ease forwards;
 	margin-right: 10px
+}
+@-webkit-keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      
+      opacity: 1
+   }
+}
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      
+      opacity: 1
+   }
 }
 nav {
 	width: 100%;
 	margin: 0;
 	background-color: var(--main-dark-bg)
+}
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--body-bg); 
+  -webkit-box-shadow: inset 0 0 5px 0 var(--main-dark-bg); 
+          box-shadow: inset 0 0 5px 0 var(--main-dark-bg)
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--body-bg); 
+  -webkit-box-shadow: 0 0 5px 0 var(--main-dark-bg); 
+          box-shadow: 0 0 5px 0 var(--main-dark-bg);
+  border-radius: 50px;
+  border: 2px outset var(--main-dark-bg)
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c9c9c9; 
 }
 
 /*MEDIA QUERIES*/
@@ -73,6 +118,12 @@ nav {
 	display: block;
 	font-size: 18px;
 	font-family: 'Roboto Condensed', sans-serif;
+}
+.dropdown-content>#active {
+   text-decoration: underline;
+}
+.dropdown-content > #active:hover {
+   color: #000
 }
 #navbar>div>.dropdown-content>a {
 	font-size: 16px;
@@ -195,11 +246,19 @@ nav {
 	text-decoration: none
 }
 #navbar>div>button>.fa-caret-right, .btmnav>div>button>.fa-caret-right {
-	transform: rotate(0deg);
-	transition: transform 0.25s ease
+	-webkit-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	        transform: rotate(0deg);
+	-webkit-transition: -webkit-transform 0.25s ease;
+	transition: -webkit-transform 0.25s ease;
+	-o-transition: transform 0.25s ease;
+	transition: transform 0.25s ease;
+	transition: transform 0.25s ease, -webkit-transform 0.25s ease
 }
 #navbar>div:hover>button>.fa-caret-right, .btmnav>div:hover>button>.fa-caret-right {
-	transform: rotate(90deg)
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg)
 }
 @media only screen and (max-width: 900px) {
 	.btmnav>a, .btmnav>div>button, .btmnav>div {
@@ -254,7 +313,19 @@ nav {
 	        box-shadow: 0 0 5px 5px var(--main-dark-bg)
 }
 #backtop:hover {
-	animation: Jump 0.5s ease infinite
+	-webkit-animation: Jump 0.5s ease infinite;
+	        animation: Jump 0.5s ease infinite
+}
+@-webkit-keyframes Jump {
+	0% {
+		bottom: 50px
+	}
+	50% {
+		bottom: 55px
+	}
+	100% {
+		bottom: 50px
+	}
 }
 @keyframes Jump {
 	0% {
@@ -334,7 +405,8 @@ footer {
 	width: 70%;
 	border-radius: 10px 10px 0 0;
 	background-color: var(--main-dark-bg);
-	box-shadow: 0 -5px 5px 5px var(--main-dark-bg);
+	-webkit-box-shadow: 0 -5px 5px 5px var(--main-dark-bg);
+	        box-shadow: 0 -5px 5px 5px var(--main-dark-bg);
 	color: #fff;
 	margin: auto;
 	padding: 5px 5px 15px 5px
@@ -360,6 +432,9 @@ footer {
 
 /*GRID (basic)*/
 
+.row-div {
+   border-bottom: 2px solid var(--main-dark-bg);
+}
 #firstrow { /*The first row*/
 	margin: 50px 30px 30px 50px
 }
@@ -380,6 +455,7 @@ footer {
 	transition: background-color 0.25s ease, color 0.25s ease, -webkit-box-shadow 0.25s ease;
 	-o-transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
 	transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+	transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease, -webkit-box-shadow 0.25s ease;
 }
 #article>.card>.card-body>.card-title {
 	-webkit-transition: color 0.25s ease;
@@ -421,10 +497,17 @@ footer {
 	border-bottom: 1px solid #222
 }
 .article-tag > .blue {
-	background-color: rgba(0,0,250,0.2);
+	background-color: rgba(0,0,250,0);
+   -webkit-transition: background-color 0.25s ease;
+   -o-transition: background-color 0.25s ease;
+   transition: background-color 0.25s ease;
 	color: darkblue;
 	border-radius: 10px;
 	padding: 5px
+}
+.article-tag > .blue:hover {
+   background-color: rgba(0,0,250,0.3);
+   text-decoration: none
 }
 .article-tag {
 	float: right;
@@ -454,8 +537,8 @@ footer {
 	margin-bottom: 0.75rem;
 	left: 0;
 	border-radius: 0 0 15px 0;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#00CC00), to(#006600));
 	background-image: -o-linear-gradient(top, #00CC00, #006600);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#00CC00), to(#006600));
 	background-image: linear-gradient(to bottom, #00CC00, #006600);
 	font-weight: 700;
 	color: white;
@@ -478,8 +561,8 @@ footer {
 	margin-bottom: 0.75rem;
 	left: 0;
 	border-radius: 0 0 15px 0;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#0339f8), to(#011353));
 	background-image: -o-linear-gradient(top, #0339f8, #011353);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#0339f8), to(#011353));
 	background-image: linear-gradient(to bottom, #0339f8, #011353);
 	font-weight: 700;
 	color: white;
