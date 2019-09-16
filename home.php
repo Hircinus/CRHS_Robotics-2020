@@ -20,7 +20,7 @@ require 'layouts/header.php';
 			<a href="article/tech" class="tag">Tech</a>
 			<h5 class="card-title">An article</h5>
 			<p class="card-text">Cool text to make you wanna learn more about something.</p>
-			<a href="article/tech/1" class="btnlink">Learn more about it!</a>
+			<a href="article/01" class="link">Keep reading <i class="fas fa-chevron-right"></i></a>
 		  </div>
 		</div>
 	</div>
@@ -33,7 +33,7 @@ require 'layouts/header.php';
 			<a href="article/important" class="tag">Important</a>
 			<h5 class="card-title">An article</h5>
 			<p class="card-text">Cool text to make you wanna learn more about something.</p>
-			<a href="article/important/1" class="btnlink">Learn more about it!</a>
+			<a href="article/12" class="link">Keep reading <i class="fas fa-chevron-right"></i></a>
 		  </div>
 		</div>
 	</div>
@@ -46,7 +46,7 @@ require 'layouts/header.php';
 			<a href="article/important" class="tag">Important</a>
 			<h5 class="card-title">An article</h5>
 			<p class="card-text">Cool text to make you wanna learn more about something.</p>
-			<a href="article/important/1" class="btnlink">Learn more about it!</a>
+			<a href="article/11" class="link">Keep reading <i class="fas fa-chevron-right"></i></a>
 		  </div>
 		</div>
 	</div>

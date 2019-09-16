@@ -27,8 +27,8 @@ Co-directors of CRHS Robotics:
 	
 WORKS ATTRIBUTION
 ///
-This website (http://crhsrobotics2020.000webhostapp.com) was created using the intellectual property of Jacob-Mahmoud Alfahad, Bootstrap framework (https://getbootstrap.com), /
-W3Schools documentation (https://www.w3schools.com) and various small, independent sources.
+This website (http://crhsrobotics2020.000webhostapp.com) was created using the intellectual property of Jacob-Mahmoud Alfahad, /
+the Bootstrap framework (https://getbootstrap.com), W3Schools documentation (https://www.w3schools.com) and various independent sources.
     
 THANKS
 ///
