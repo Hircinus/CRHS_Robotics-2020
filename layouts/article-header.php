@@ -25,7 +25,7 @@
 				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN Home'){echo 'active';}else{echo '';} ?>" href="../home">Home</a>
 				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN About'){echo 'active';}else{echo '';} ?>" href="../about">About</a>
 				<div class="dropdown">
-				  <button id="<?php if($title =='CRHS Robotics 2020 - ESPN Articles'){echo 'active';}else{echo '';} ?>" class="dropbtn">Articles <i class="fas fa-caret-right"></i></button>
+				  <button id="<?php if($title =='Tech articles - CRHS Robotics 2020' || $title=='Important articles - CRHS Robotics 2020'){echo 'active';}else{echo '';} ?>" class="dropbtn">Articles <i class="fas fa-caret-right"></i></button>
 				  <div class="dropdown-content">
 					<a id="<?php if($title =='Tech articles - CRHS Robotics 2020'){echo 'active';}else{echo '';} ?>" href="../article/tech">Tech</a>
 					<a id="<?php if($title =='Important articles - CRHS Robotics 2020'){echo 'active';}else{echo '';} ?>" href="../article/important">Important</a>
@@ -50,7 +50,7 @@
 				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN Home'){echo 'active';}else{echo '';} ?>" href="../home">Home</a>
 				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN About'){echo 'active';}else{echo '';} ?>" href="../about">About</a>
 				<div class="dropdown">
-				  <button id="<?php if($title =='CRHS Robotics 2020 - ESPN Articles'){echo 'active';}else{echo '';} ?>" class="dropbtn">Articles <i class="fas fa-caret-right"></i></button>
+				  <button id="<?php if($title =='Tech articles - CRHS Robotics 2020' || $title=='Important articles - CRHS Robotics 2020'){echo 'active';}else{echo '';} ?>" class="dropbtn">Articles <i class="fas fa-caret-right"></i></button>
 				  <div class="dropdown-content">
 					<a id="<?php if($title =='Tech articles - CRHS Robotics 2020'){echo 'active';}else{echo '';} ?>" href="../article/tech">Tech</a>
 					<a id="<?php if($title =='Important articles - CRHS Robotics 2020'){echo 'active';}else{echo '';} ?>" href="../article/important">Important</a>

@@ -3,11 +3,9 @@
 		<div id="firstrow" class="row bg-light-j">
 			<div class="col-12">
 				<h2 class="article-title"><?php echo $articletitle ?></h2>
-				<h3 class="article-tag"><a href="tech-list" class="<?php if($tag == 'Tech') { echo 'blue'; } else { echo ''; } ?>"><?php echo $tag ?></a></h3>
+				<h3 class="article-tag"><a href="<?php echo $tagsrc ?>" class="<?php if($tag == 'Tech') { echo 'blue'; } else { echo ''; } ?>"><?php echo $tag ?></a></h3>
 				<em>Jacob Alfahad</em>
-			</div>
-			<div class="col-12">
-				<hr class="article-title-hr">
+            <hr class="article-title-hr">
 			</div>
 		</div>
 		<div id="row" class="row justify-content-around">
