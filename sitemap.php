@@ -21,13 +21,13 @@ require 'layouts/header.php';
       <h2>Articles</h2>
 		<hr class="row-div">
 		<ul>
-         <h3>Tech</h3>
+         <li><a href="article/tech" class="link">Tech</a></li>
          <ul>
             <li><a href="article/01" class="link">Article 01</a></li>
             <li><a href="article/02" class="link">Article 02</a></li>
             <li><a href="article/03" class="link">Article 03</a></li>
          </ul>
-         <h3>Important</h3>
+         <li><a href="article/important" class="link">Important</a></li>
          <ul>
             <li><a href="article/11" class="link">Article 11</a></li>
             <li><a href="article/12" class="link">Article 12</a></li>
