@@ -26,7 +26,8 @@
 				<a class="link" target="_blank" href="how_to_make_a_site">I wanna make a site! <i class="fas fa-external-link-alt"></i></a>
 			</div>
 		</div>
-		<p class="text-center"><a class="link" href="humans.txt" target="_blank">humans.txt <i class="fas fa-external-link-alt"></i></a></p>
+		<p class="text-center"><a class="link" href="humans.txt" target="_blank">humans.txt <i class="fas fa-external-link-alt"></i></a>&nbsp;
+      <a class="link" href="https://github.com/Hircinus/CRHS_Robotics-2020" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a></p>
 	</footer>
 	<button onclick="backToTop()" id="backtop"><i class="fas fa-caret-up"></i></button>
 	</div>

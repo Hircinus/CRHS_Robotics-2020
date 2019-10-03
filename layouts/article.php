@@ -8,7 +8,7 @@
             <hr class="article-title-hr">
 			</div>
 		</div>
-		<div id="row" class="row justify-content-around">
+		<div id="row" class="row justify-content-center">
 			<p class="article-body"><?php echo $articlebody ?></p>
 		</div>
 		<div id="lastrow" class="row justify-content-around">
