@@ -25,10 +25,12 @@ body {
 	background-color: var(--body-bg)!important
 }
 .content {
-	margin-left: 10px;
    -webkit-animation: fadeIn 0.15s ease forwards;
            animation: fadeIn 0.15s ease forwards;
-	margin-right: 10px
+}
+.content>*:not(#homerow):not(.container) {
+   margin-right: 10px;
+   margin-left: 10px
 }
 @-webkit-keyframes fadeIn {
    from {
@@ -168,16 +170,11 @@ nav {
 /*BOTTOMNAV (larger nav that does not move)*/
 
 .btmnav {
-	padding: 30px
+	padding: 20px
 }
 .btmnav>.navbar-brand>img {
-	height: 60px;
-	width: 60px
-}
-.btmnav>div>button {
-	color: white;
-	font-size: 20px;
-	padding: 0
+	height: 50px;
+	width: 50px
 }
 .btmnav>div>button {
 	cursor: default
@@ -194,6 +191,7 @@ nav {
 	font-size: 30px;
 	color: white;
 	float: middle;
+   padding: 0;
 	text-decoration: none;
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -212,7 +210,7 @@ nav {
 	-o-transition: top 0.3s;
 	transition: top 0.3s;
 	z-index: 2;
-	padding: 15px;
+	padding: 10px;
 	background-color: var(--main-dark-bg);
 	-webkit-box-shadow: 0 5px 5px 5px var(--main-dark-bg);
 	        box-shadow: 0 5px 5px 5px var(--main-dark-bg)
@@ -382,6 +380,24 @@ nav {
 	        text-decoration-color: var(--link);
    color: var(--link)
 }
+.btnlink {
+   background-color: rgba(0,0,0,0.1);
+   padding: 20px;
+   text-decoration: none;
+   border-radius: 15px;
+   margin: 20px;
+   color: var(--link);
+   border: 1px solid transparent;
+   transition: border 0.35s ease;
+}
+.btnlink:hover {
+   border: 1px solid var(--link);
+   text-decoration: none;
+   color: var(--link);
+}
+.invisible {
+   opacity: 0
+}
 footer>div>div>.link {
    color: #E65F5F;
    text-decoration: underline;
@@ -470,17 +486,40 @@ footer::after {
 .row-div {
    border-bottom: 2px solid var(--main-dark-bg);
 }
+#homerow { /*The first row on the "home" page*/
+	margin: 0;
+   width: 100%;
+   background-color: white;
+   padding: 40px;
+   box-shadow: inset 0 0 10px 0 var(--main-dark-bg)
+}
+#homerow>div {
+   margin: 20px 0 20px 0
+}
+#homerow>div>h1 {
+   font-size: 9vw;
+   text-shadow: 0.25vw 0.25vw #6a0000;
+}
 #firstrow { /*The first row*/
 	margin: 50px 30px 30px 50px
 }
 #row { /*Any row proceeding the first row but preceding the last row*/
 	margin: 30px
 }
+#row>div {
+   margin: 15px 0 15px 0
+}
 #lastrow { /*The last row before the footer*/
 	margin: 30px 30px 50px 30px
 }
 #footrow { /*Row containing the footer*/
 	margin: 30px 30px 15px 30px
+}
+#side-card {
+   background-color: white;
+   border-radius: 15px;
+   box-shadow: 0 2px 5px 0 var(--main-dark-bg);
+   padding: 20px
 }
 
 /*GRID (specifics of articles)*/
