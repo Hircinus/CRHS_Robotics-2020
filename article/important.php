@@ -15,7 +15,7 @@ require '../layouts/article-header.php';
 			<a href="important" class="tag">Important</a>
 			<h5 class="card-title">An article</h5>
 			<p class="card-text">Cool text to make you wanna learn more about something.</p>
-			<a href="11" class="btnlink">Learn more about it!</a>
+			<a href="11" class="link">Learn more about it!</a>
 		  </div>
 		</div>
 	</div>
@@ -28,7 +28,7 @@ require '../layouts/article-header.php';
 			<a href="important" class="tag">Important</a>
 			<h5 class="card-title">An article</h5>
 			<p class="card-text">Cool text to make you wanna learn more about something.</p>
-			<a href="11" class="btnlink">Learn more about it!</a>
+			<a href="11" class="link">Learn more about it!</a>
 		  </div>
 		</div>
 	</div>
