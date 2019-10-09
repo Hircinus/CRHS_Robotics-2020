@@ -1,23 +1,23 @@
 /*VARIABLE CALLING*/
 
 :root {
-	--main-dark-bg: #222;
-	--body-bg: #EDEEF0;
-   --active: #E65F5F;
+	--element-bg: #000;
+	--body-bg: #222;
+   --light-accent: #a7a7a7;
+   --light-accent-hover: #c9c9c9;
    --link: #D00000;
-   --link-hover: #6a0000;
-   --link-underline-color: rgba(0,0,0,0.2);
-   --link-underline-color-light: rgba(250,250,250,0.2)
-}
-
-@media (prefers-color-scheme: dark) {
-
+   --alt-link: #E65F5F;
+   --alt-link-hover: #ed8b8b;
+   --link-underline-color: rgba(250,250,250,0.2);
+   --link-underline-color-light: rgba(250,250,250,0.2);
+   --text: #c9c9c9;
+   --alt-text: #222
 }
 
 /*GENERAL (large bodies)*/
 
 html {
-   scroll-behavior: smooth;
+   scroll-behavior: smooth
 }
 * {
 	-webkit-box-sizing: border-box;
@@ -57,7 +57,7 @@ body {
 nav {
 	width: 100%;
 	margin: 0;
-	background-color: var(--main-dark-bg)
+	background-color: var(--element-bg)
 }
 /* width */
 ::-webkit-scrollbar {
@@ -67,23 +67,30 @@ nav {
 /* Track */
 ::-webkit-scrollbar-track {
   background: var(--body-bg); 
-  -webkit-box-shadow: inset 0 0 5px 0 var(--main-dark-bg); 
-          box-shadow: inset 0 0 5px 0 var(--main-dark-bg)
+  -webkit-box-shadow: inset 0 0 5px 0 var(--element-bg); 
+          box-shadow: inset 0 0 5px 0 var(--element-bg)
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--body-bg); 
-  -webkit-box-shadow: 0 0 5px 0 var(--main-dark-bg); 
-          box-shadow: 0 0 5px 0 var(--main-dark-bg);
+  -webkit-box-shadow: 0 0 5px 0 var(--element-bg); 
+          box-shadow: 0 0 5px 0 var(--element-bg);
   border-radius: 50px;
-  border: 2px outset var(--main-dark-bg)
+  border: 2px outset var(--light-accent)
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #c9c9c9; 
+  background: var(--light-accent); 
 }
+
+/* TEXT */
+
+p, h2, h3, h4, h5, li {
+   color: var(--text)!important
+}
+
 
 /*MEDIA QUERIES*/
 
@@ -91,11 +98,11 @@ nav {
 	#navbar, #backtop {
 		display: none
 	}
-}
+}/*
 .bg-light-j {
 	background-color: var(--body-bg)!important;
 	border-radius: 20px 20px 0 0;
-}
+} REMOVE IF UNNECESSARY
 
 /*DROPDOWN*/
 
@@ -116,17 +123,17 @@ nav {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: #fff;
+	background-color: var(--body-bg);
 	min-width: 100px;
 	overflow: auto;
-	-webkit-box-shadow: 0px 2px 4px 0px var(--main-dark-bg);
-	        box-shadow: 0px 2px 4px 0px var(--main-dark-bg);
+	-webkit-box-shadow: 0px 2px 4px 0px var(--element-bg);
+	        box-shadow: 0px 2px 4px 0px var(--element-bg);
 	border-radius: 10px;
 	z-index: 2;
 	opacity: 0;
 }
 .dropdown-content a {
-	color: black;
+	color: var(--light-accent);
 	padding: 12px 14px;
 	text-decoration: none;
 	display: block;
@@ -134,20 +141,19 @@ nav {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 .dropdown-content > a:not(:last-child) {
-   border-bottom: var(--main-dark-bg) 1px solid
+   border-bottom: var(--light-accent) 1px solid
 }
 .dropdown-content>#active, .dropdown-content>#active:hover {
-   background-color: #c9c9c9;
-   color: #D00000
+   color: var(--alt-link)
 }
 #navbar>div>.dropdown-content>a {
 	font-size: 16px;
 	padding: 10px 12px;
 }
 .dropdown a:hover {
-	background-color: #c9c9c9;
+	background-color: var(--element-bg);
 	text-decoration: none;
-	color: black
+   color: var(--link)
 }
 .dropdown:hover .dropdown-content {
 	display: block;
@@ -186,7 +192,7 @@ nav {
 .btmnav>a {
 	margin-left: 45px;
 	font-size: 30px;
-	color: white;
+	color: var(--light-accent);
 	float: middle;
 	text-decoration: none;
    border: 1px solid transparent;
@@ -194,7 +200,7 @@ nav {
 }
 .btmnav>div>button {
 	font-size: 30px;
-	color: white;
+	color: var(--light-accent);
 	float: middle;
    border: 1px solid transparent;
    padding: 0;
@@ -217,9 +223,9 @@ nav {
 	transition: top 0.3s;
 	z-index: 2;
 	padding: 10px;
-	background-color: var(--main-dark-bg);
-	-webkit-box-shadow: 0 5px 5px 5px var(--main-dark-bg);
-	        box-shadow: 0 5px 5px 5px var(--main-dark-bg)
+	background-color: var(--element-bg);
+	-webkit-box-shadow: 0 5px 5px 5px var(--element-bg);
+	        box-shadow: 0 5px 5px 5px var(--element-bg)
 }
 #navbar>.navbar-brand>img {
 	height: 30px;
@@ -232,14 +238,14 @@ nav {
 }
 #navbar>a, #navbar>div {
 	margin-left: 24px;
-	color: white;
+	color: var(--light-accent);
 	text-decoration: none;
 	font-size: 20px;
    border: 1px solid transparent;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 #navbar>div>button {
-	color: white;
+	color: var(--light-accent);
 	padding: 0;
 	font-size: 20px
 }
@@ -253,14 +259,14 @@ nav {
    border: 1px dashed white
 }
 #navbar>#active, .btmnav>#active, #navbar>div>#active, .btmnav>div>#active {
-	border-bottom: solid var(--active) 2px;
-   color: var(--active)
+	border-bottom: solid var(--alt-link) 2px;
+   color: var(--alt-link)
 }
 #navbar>#active:active, .btmnav>#active:active, #navbar>div>#active:active, .btmnav>div>#active:active {
-	border: 1px dashed var(--active)
+	border: 1px dashed var(--alt-link)
 }
 #navbar>a:hover, #navbar>div:hover>button, .btmnav>a:hover, .btmnav>div:hover>button {
-	color: #c9c9c9;
+	color: var(--light-accent-hover);
 	text-decoration: none
 }
 #navbar>div>button>.fa-caret-right, .btmnav>div>button>.fa-caret-right {
@@ -294,11 +300,11 @@ nav {
 		margin-bottom: 20px
 	}
 	.btmnav>a:hover, .btmnav>div>button:hover, .btmnav>div:hover {
-		color: #c9c9c9
+		color: var(--light-accent-hover)
 	}
 }
 #navbar>#fr,.btmnav>#fr {
-   border-left: 1px solid #c9c9c9;
+   border-left: 1px solid var(--light-accent);
    border-right: 1px solid transparent;
    border-bottom: solid transparent 1px;
    border-top: 1px solid transparent;
@@ -312,11 +318,12 @@ nav {
    margin: 20px 0 10px 0
 }
 #social-link {
-	color: var(--active);
-   font-size: 2vw
+	color: var(--alt-link);
+   font-size: 2vw;
+   transition: color 0.25s ease
 }
 #social-link:hover {
-	color: #ed8b8b  
+	color: var(--alt-link-hover)  
 }
 
 /*Back to top button*/
@@ -336,9 +343,9 @@ nav {
 	z-index: 2;
 	padding: 10px;
 	color: white;
-	background-color: var(--main-dark-bg);
-	-webkit-box-shadow: 0 0 5px 5px var(--main-dark-bg);
-	        box-shadow: 0 0 5px 5px var(--main-dark-bg)
+	background-color: var(--element-bg);
+	-webkit-box-shadow: 0 0 5px 5px var(--element-bg);
+	        box-shadow: 0 0 5px 5px var(--element-bg)
 }
 #backtop:hover {
 	-webkit-animation: Jump 0.5s ease infinite;
@@ -391,8 +398,8 @@ nav {
 .link {
 	color: var(--link);
    text-decoration: underline;
-   -webkit-text-decoration-color: rgba(0,0,0,0.3);
-           text-decoration-color: rgba(0,0,0,0.3);
+   -webkit-text-decoration-color: var(--link-underline-color);
+           text-decoration-color: var(--link-underline-color);
    -webkit-transition: -webkit-text-decoration-color 0.25s ease;
    transition: -webkit-text-decoration-color 0.25s ease;
    -o-transition: text-decoration-color 0.25s ease;
@@ -405,7 +412,7 @@ nav {
    color: var(--link)
 }
 .btnlink {
-   background-color: rgba(0,0,0,0.1);
+   background-color: var(--link-underline-color);
    padding: 20px;
    text-decoration: none;
    border-radius: 15px;
@@ -423,7 +430,7 @@ nav {
    opacity: 0
 }
 footer>div>div>.link {
-   color: #E65F5F;
+   color: var(--alt-link);
    text-decoration: underline;
    -webkit-text-decoration-color: var(--link-underline-color-light);
            text-decoration-color: var(--link-underline-color-light);
@@ -434,12 +441,12 @@ footer>div>div>.link {
    transition: text-decoration-color 0.25s ease, -webkit-text-decoration-color 0.25s ease
 }
 footer>div>div>.link:hover {
-   -webkit-text-decoration-color: #E65F5F;
-           text-decoration-color: #E65F5F;
-   color: #E65F5F
+   -webkit-text-decoration-color: var(--alt-link);
+           text-decoration-color: var(--alt-link);
+   color: var(--alt-link)
 }
 footer>p>.link {
-   color: #E65F5F;
+   color: var(--alt-link);
    text-decoration: underline;
    -webkit-text-decoration-color: var(--link-underline-color-light);
            text-decoration-color: var(--link-underline-color-light);
@@ -450,9 +457,9 @@ footer>p>.link {
    transition: text-decoration-color 0.25s ease, -webkit-text-decoration-color 0.25s ease
 }
 footer>p>.link:hover {
-   -webkit-text-decoration-color: #E65F5F;
-           text-decoration-color: #E65F5F;
-   color: #E65F5F
+   -webkit-text-decoration-color: var(--alt-link);
+           text-decoration-color: var(--alt-link);
+   color: var(--alt-link)
 }
 .tag {
 	text-decoration: none;
@@ -469,8 +476,8 @@ footer>p>.link:hover {
 footer {
 	width: 70%;
 	border-radius: 30px 30px 0 0;
-	background-color: var(--main-dark-bg);
-	color: #fff;
+	background-color: var(--element-bg);
+	color: var(--light-accent);
 	margin: auto;
 	padding: 5px 5px 15px 5px;
    position: relative
@@ -485,8 +492,8 @@ footer::before {
   height: 25px;
   width: 50px;
   border-radius: 0 0 30px 0;
-  -webkit-box-shadow: 25px 0 0 0 var(--main-dark-bg);
-          box-shadow: 25px 0 0 0 var(--main-dark-bg)
+  -webkit-box-shadow: 25px 0 0 0 var(--element-bg);
+          box-shadow: 25px 0 0 0 var(--element-bg)
 }
 footer::after {
   content: "";
@@ -498,8 +505,8 @@ footer::after {
   height: 25px;
   width: 50px;
   border-radius: 0 0 0 30px;
-  -webkit-box-shadow: -25px 0 0 0 var(--main-dark-bg);
-          box-shadow: -25px 0 0 0 var(--main-dark-bg)
+  -webkit-box-shadow: -25px 0 0 0 var(--element-bg);
+          box-shadow: -25px 0 0 0 var(--element-bg)
 }
 @media only screen and (max-width: 991px) {
 	#footrow>div {
@@ -507,30 +514,34 @@ footer::after {
 	}
 }
 .foot-div {
-	background-color: #c9c9c9;
+	background-color: var(--light-accent);
    border-radius: 50px;
    height: 3px;
-   box-shadow: 2px 2px 0 0 var(--active)
+   box-shadow: 2px 2px 0 0 var(--alt-link)
 }
 
 /*GRID (basic)*/
 
 .row-div {
-   border-bottom: 2px solid var(--main-dark-bg);
+   border-bottom: 2px solid var(--light-accent);
 }
 #homerow { /*The first row on the "home" page*/
 	margin: 0;
    width: 100%;
-   background-color: white;
+   background-color: var(--light-accent);
    padding: 40px;
-   box-shadow: inset 0 0 10px 0 var(--main-dark-bg)
+   box-shadow: inset 0 0 10px 0 var(--element-bg)
 }
 #homerow>div {
    margin: 20px 0 20px 0
 }
 #homerow>div>h1 {
    font-size: 9vw;
+   color: var(--alt-text)!important;
    text-shadow: 0.25vw 0.25vw #6a0000;
+}
+#homerow>div>h2 {
+   color: var(--alt-text)!important
 }
 #firstrow { /*The first row*/
 	margin: 50px 30px 30px 50px
@@ -548,16 +559,16 @@ footer::after {
 	margin: 30px 30px 15px 30px
 }
 #side-card {
-   background-color: white;
+   background-color: var(--element-bg);
    border-radius: 15px;
-   box-shadow: 0 2px 5px 0 var(--main-dark-bg);
+   box-shadow: 0 2px 5px 0 var(--element-bg);
    padding: 20px
 }
 
 /*GRID (specifics of pages)*/
 
 .inner-divider {
-   background-color: #222;
+   background-color: var(--light-accent);
    border-radius: 50px;
    height: 3px;
    box-shadow: 2px 2px 0 0 var(--link)
@@ -566,7 +577,7 @@ footer::after {
    background-color: var(--link);
    border-radius: 50px;
    height: 5px;
-   box-shadow: 3px 3px 0 0 #222
+   box-shadow: 3px 3px 0 0 var(--light-accent)
 }
 
 /*GRID (specifics of articles)*/
@@ -581,12 +592,12 @@ footer::after {
    border-radius: 15px;
 	overflow: hidden;
 	border: none;
-	-webkit-box-shadow: 0 2px 5px 0 var(--main-dark-bg);
-	        box-shadow: 0 2px 5px 0 var(--main-dark-bg)
+	-webkit-box-shadow: 0 2px 5px 0 var(--element-bg);
+	        box-shadow: 0 2px 5px 0 var(--element-bg)
 }
 #article:hover>.card {
-	-webkit-box-shadow: 0 8px 16px 0 var(--main-dark-bg);
-	        box-shadow: 0 8px 16px 0 var(--main-dark-bg)
+	-webkit-box-shadow: 0 8px 16px 0 var(--element-bg);
+	        box-shadow: 0 8px 16px 0 var(--element-bg)
 }
 #article>.card>img {
 	max-height: 250px;
@@ -627,12 +638,15 @@ footer::after {
 .article-title-hr {
 	width: 100%;
 	float: left;
-	border: 3px solid var(--main-dark-bg)
+	border: 3px solid var(--element-bg)
 }
 .article-body {
 	font-family: georgia;
 	font-size: 17px;
 	line-height: 30px
+}
+.important-article, .tech-article {
+   background-color: var(--element-bg)
 }
 
 /*IMPORTANT TAG*/
@@ -650,7 +664,7 @@ footer::after {
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#00CC00), to(#006600));
 	background-image: linear-gradient(to bottom, #00CC00, #006600);
 	font-weight: 700;
-	color: white;
+	color: var(--light-accent);
 	font-size: 14px;
 	font-family: monospace;
 	padding: 0 10px 0 5px
@@ -671,7 +685,7 @@ footer::after {
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#0339f8), to(#011353));
 	background-image: linear-gradient(to bottom, #0339f8, #011353);
 	font-weight: 700;
-	color: white;
+	color: var(--light-accent);
 	font-size: 14px;
 	font-family: monospace;
 	padding: 0 10px 0 5px
@@ -691,8 +705,8 @@ footer::after {
    width: 50px;
    bottom: 50px;
    left: 50px;
-   -webkit-box-shadow: 0 0 5px 5px var(--main-dark-bg);
-	        box-shadow: 0 0 5px 5px var(--main-dark-bg)
+   -webkit-box-shadow: 0 0 5px 5px var(--element-bg);
+	        box-shadow: 0 0 5px 5px var(--element-bg)
 }
 #lightbutton {
    position: fixed;
@@ -706,9 +720,8 @@ footer::after {
    width: 50px;
    bottom: 50px;
    left: 50px;
-   display: none;
-   -webkit-box-shadow: 0 0 5px 5px var(--main-dark-bg);
-	        box-shadow: 0 0 5px 5px var(--main-dark-bg)
+   -webkit-box-shadow: 0 0 5px 5px var(--element-bg);
+	        box-shadow: 0 0 5px 5px var(--element-bg)
 }
 #darkbutton:focus, #lightbutton:focus {
    outline: none
