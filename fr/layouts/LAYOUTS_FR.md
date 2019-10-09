@@ -1,0 +1,1 @@
+Oui, les "layouts" francais.
