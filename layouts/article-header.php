@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<title><?php echo $title; ?></title>
-		<link type="text/css" rel="stylesheet" href="../assets/style.css">
+		<link type="text/css" rel="stylesheet" id="stylesheet" href="assets/style.css">
 		<script src="../assets/script.js"></script>
+      <script src="../assets/lazyload.js"></script>
 		<link rel="icon" type="image/png" href="../assets/favicon.png">
 		<meta charset="UTF-8">
 		<meta name="description" content="CRHS joins robotics in this year's 2020 CRC robotics competition! This year's theme is ESPN, 

@@ -10,7 +10,7 @@
 			<div class="col-lg-3 col-md-6 col-sm-12 col-12">
 				<h6>Useful resources</h6>
 				<hr class="foot-div">
-				<a class="link" target="_blank" href="privacy_policy">Privacy Policy <i class="fas fa-external-link-alt"></i></a><br>
+				<a class="link" target="_blank" href="privacy_policy">Privacy policy <i class="fas fa-external-link-alt"></i></a><br>
 				<a class="link" target="_blank" href="sitemap">Sitemap <i class="fas fa-external-link-alt"></i></a>
 			</div>
 			<div class="col-lg-3 col-md-6 col-sm-12 col-12">
@@ -20,14 +20,29 @@
 				<a class="link" target="_blank" href="http://www.crhsrobotics.com/2019">CRHS Robotics web site (2019) <i class="fas fa-external-link-alt"></i></a>
 			</div>
 			<div class="col-lg-3 col-md-6 col-sm-12 col-12">
-				<h6>IDK</h6>
+				<h6>Nerdy stuff</h6>
 				<hr class="foot-div">
-				<a class="link" target="_blank" href="privacy_policy">Privacy Policy <i class="fas fa-external-link-alt"></i></a><br>
-				<a class="link" target="_blank" href="how_to_make_a_site">I wanna make a site! <i class="fas fa-external-link-alt"></i></a>
+				<a class="link" href="https://github.com/Hircinus/CRHS_Robotics-2020" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a><br>
+            <a class="link" href="https://codepen.io/hircinus/" target="_blank">CodePen <i class="fas fa-external-link-alt"></i></a><br>
+            <a class="link" href="humans.txt" target="_blank">humans.txt <i class="fas fa-external-link-alt"></i></a>
 			</div>
+         <div class="col-12">
+            <ul id="social-nav"class="nav justify-content-center align-items-middle">
+               <li class="nav-item">
+                  <a id="social-link" class="nav-link" href="https://www.facebook.com/CRHSROBOTICSOFFICIAL/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+               </li>
+               <li class="nav-item">
+                 <a id="social-link" class="nav-link" href="https://www.instagram.com/crhsrobotics2k20/" target="_blank"><i class="fab fa-instagram"></i></a>
+               </li>
+               <li class="nav-item">
+                 <a id="social-link" class="nav-link" href="https://www.youtube.com/channel/UCWMAQGH2H-f1ipbH2OWfZag" target="_blank"><i class="fab fa-youtube"></i></a>
+               </li>
+             </ul>
+         </div>
 		</div>
-		<p class="text-center"><a class="link" href="humans.txt" target="_blank">humans.txt <i class="fas fa-external-link-alt"></i></a>&nbsp;
-      <a class="link" href="https://github.com/Hircinus/CRHS_Robotics-2020" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a></p>
+      <button id="darkbutton" onclick="darktheme()"><i class="fas fa-moon"></i></button>
+      <button id="lightbutton" onclick="lighttheme()"><i class="fas fa-sun"></i></button>
+      <p class="credits"><em>Website design and development by Jacob Alfahad.</em></p>
 	</footer>
 	<button onclick="backToTop()" id="backtop"><i class="fas fa-caret-up"></i></button>
 	</div>

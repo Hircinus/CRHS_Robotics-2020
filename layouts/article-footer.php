@@ -26,6 +26,8 @@
 				<a class="link" target="_blank" href="how_to_make_a_site">I wanna make a site! <i class="fas fa-external-link-alt"></i></a>
 			</div>
 		</div>
+      <button id="darkbutton" onclick="darktheme()"><i class="fas fa-moon"></i></button>
+      <button id="lightbutton" onclick="lighttheme()"><i class="fas fa-sun"></i></button>
 		<p class="text-center"><a class="link" href="../humans.txt" target="_blank">humans.txt <i class="fas fa-external-link-alt"></i></a></p>
 	</footer>
 	<button onclick="backToTop()" id="backtop"><i class="fas fa-caret-up"></i></button>
