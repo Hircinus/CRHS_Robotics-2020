@@ -19,3 +19,7 @@ If you've found a design malfunction, i.e. some colors don't match well or a few
 Alternatively, if you have a cool new feature in mind for a problem, then you'll select "Feature request".
 
 From there, simply fill in the necessary information, and add the necessary extra information, found on the sidebar to the right of the textarea. I recomment you add a few assignees (including yourself) for the issue for people who you think should be notified directly about the issue. Afterwards, add any extra labels (as you see fit), and then select "Submit new issue". Once sent, the issue can be seen by everyone else on the team, however people who were assigned to it will be notified of it directly and will therefore more likely see it first.
+
+## Submitting a pull request
+Coded a new element to the website? Fixed that issue you saw before? Then making a pull request is the next thing to do! 
+Simply go to the **Code** page, and select "Upload files". Then, you can choose the files you wanna upload, and you can add a name and description of what you changed. After, select the radio button to "Create a **new branch**". This will upload your code and open a new pull request: basically its a way to compare your code and the code already on GitHub and for me to check it out and validate it.
