@@ -1,17 +1,21 @@
 /*VARIABLE CALLING*/
 
 :root {
-	--main-dark-bg: #222;
-	--body-bg: #EDEEF0;
-   --active: #E65F5F;
-   --link: #D00000;
-   --link-hover: #6a0000;
-   --link-underline-color: rgba(0,0,0,0.2);
-   --link-underline-color-light: rgba(250,250,250,0.2)
-}
-
-@media (prefers-color-scheme: dark) {
-
+	--element-bg: #222;
+	--body-bg: #fff;
+	--light-accent: #222;
+	--light-accent-hover: #444;
+	--link: #D00000;
+	--alt-link: #E65F5F;
+	--alt-link-hover: #ed8b8b;
+	--link-underline-color: rgba(0,0,0,0.2);
+	--link-underline-color-light: rgba(250,250,250,0.2);
+	--text: #222;
+	--alt-text: #c9c9c9;
+	--tag-blue: rgb(0,0,250);
+	--tag-blue-bg: rgba(0,0,250,0.3);
+	--tag-green: rgb(0,150,0);
+	--tag-green-bg: rgba(0,150,0,0.3)
 }
 
 /*GENERAL (large bodies)*/
@@ -41,7 +45,7 @@ body {
       opacity: 0;
    }
    to {
-      
+
       opacity: 1
    }
 }
@@ -50,14 +54,17 @@ body {
       opacity: 0;
    }
    to {
-      
+
       opacity: 1
    }
 }
 nav {
 	width: 100%;
 	margin: 0;
-	background-color: var(--main-dark-bg)
+	background-color: var(--element-bg)
+}
+p, h2, h3, h4, h5, li {
+   color: var(--text)!important
 }
 /* width */
 ::-webkit-scrollbar {
@@ -66,23 +73,23 @@ nav {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--body-bg); 
-  -webkit-box-shadow: inset 0 0 5px 0 var(--main-dark-bg); 
-          box-shadow: inset 0 0 5px 0 var(--main-dark-bg)
+  background: var(--body-bg);
+  -webkit-box-shadow: inset 0 0 5px 0 var(--element-bg);
+          box-shadow: inset 0 0 5px 0 var(--element-bg)
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--body-bg); 
-  -webkit-box-shadow: 0 0 5px 0 var(--main-dark-bg); 
-          box-shadow: 0 0 5px 0 var(--main-dark-bg);
+  background: var(--body-bg);
+  -webkit-box-shadow: 0 0 5px 0 var(--element-bg);
+          box-shadow: 0 0 5px 0 var(--element-bg);
   border-radius: 50px;
-  border: 2px outset var(--main-dark-bg)
+  border: 2px outset var(--element-bg)
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #c9c9c9; 
+  background: #c9c9c9;
 }
 
 /*MEDIA QUERIES*/
@@ -117,10 +124,10 @@ nav {
 	display: none;
 	position: absolute;
 	background-color: #fff;
-	min-width: 100px;
+	min-width: 150px;
 	overflow: auto;
-	-webkit-box-shadow: 0px 2px 4px 0px var(--main-dark-bg);
-	        box-shadow: 0px 2px 4px 0px var(--main-dark-bg);
+	-webkit-box-shadow: 0px 2px 4px 0px var(--element-bg);
+	        box-shadow: 0px 2px 4px 0px var(--element-bg);
 	border-radius: 10px;
 	z-index: 2;
 	opacity: 0;
@@ -134,7 +141,7 @@ nav {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 .dropdown-content > a:not(:last-child) {
-   border-bottom: var(--main-dark-bg) 1px solid
+   border-bottom: var(--element-bg) 1px solid
 }
 .dropdown-content>#active, .dropdown-content>#active:hover {
    background-color: #c9c9c9;
@@ -174,7 +181,8 @@ nav {
 /*BOTTOMNAV (larger nav that does not move)*/
 
 .btmnav {
-	padding: 20px
+	padding: 20px;
+	background-color: transparent
 }
 .btmnav>.navbar-brand>img {
 	height: 50px;
@@ -186,16 +194,16 @@ nav {
 .btmnav>a {
 	margin-left: 45px;
 	font-size: 30px;
-	color: white;
 	float: middle;
+	color: var(--light-accent);
 	text-decoration: none;
    border: 1px solid transparent;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 .btmnav>div>button {
 	font-size: 30px;
-	color: white;
 	float: middle;
+	color: var(--light-accent);
    border: 1px solid transparent;
    padding: 0;
 	text-decoration: none;
@@ -217,9 +225,9 @@ nav {
 	transition: top 0.3s;
 	z-index: 2;
 	padding: 10px;
-	background-color: var(--main-dark-bg);
-	-webkit-box-shadow: 0 5px 5px 5px var(--main-dark-bg);
-	        box-shadow: 0 5px 5px 5px var(--main-dark-bg)
+	background-color: var(--element-bg);
+	-webkit-box-shadow: 0 5px 5px 5px var(--element-bg);
+	        box-shadow: 0 5px 5px 5px var(--element-bg)
 }
 #navbar>.navbar-brand>img {
 	height: 30px;
@@ -249,19 +257,33 @@ nav {
 
 /*ALL NAVBARS*/
 
-#navbar>a:active, #navbar>div>button:active, .btmnav>div>button:active, .btmnav>a:active {
+#navbar>a:active, #navbar>div>button:active {
    border: 1px dashed white
 }
-#navbar>#active, .btmnav>#active, #navbar>div>#active, .btmnav>div>#active {
-	border-bottom: solid var(--active) 2px;
-   color: var(--active)
+.btmnav>div>button:active, .btmnav>a:active {
+	border: 1px solid black
 }
-#navbar>#active:active, .btmnav>#active:active, #navbar>div>#active:active, .btmnav>div>#active:active {
-	border: 1px dashed var(--active)
+#navbar>#active, #navbar>div>#active {
+	border-bottom: solid var(--alt-link) 2px;
+   color: var(--alt-link)
 }
-#navbar>a:hover, #navbar>div:hover>button, .btmnav>a:hover, .btmnav>div:hover>button {
+.btmnav>#active, .btmnav>div>#active {
+	border-bottom: solid var(--link) 2px;
+	color: var(--link)
+}
+#navbar>#active:active, #navbar>div>#active:active {
+	border: 1px dashed var(--alt-link)
+}
+.btmnav>#active:active, .btmnav>div>#active:active {
+	border: 1px dashed var(--alt-link)
+}
+#navbar>a:hover, #navbar>div:hover>button {
 	color: #c9c9c9;
 	text-decoration: none
+}
+.btmnav>a:hover, .btmnav>div:hover>button {
+	text-decoration: none;
+	color: #444
 }
 #navbar>div>button>.fa-caret-right, .btmnav>div>button>.fa-caret-right {
 	-webkit-transform: rotate(0deg);
@@ -297,13 +319,21 @@ nav {
 		color: #c9c9c9
 	}
 }
-#navbar>#fr,.btmnav>#fr {
-   border-left: 1px solid #c9c9c9;
+.btmnav>#fr {
+   border-left: 1px solid var(--light-accent);
    border-right: 1px solid transparent;
    border-bottom: solid transparent 1px;
    border-top: 1px solid transparent;
    margin-left: 22.5px;
    padding-left: 22.5px
+}
+#navbar>#fr {
+	border-left: 1px solid #c9c9c9;
+	border-right: 1px solid transparent;
+	border-bottom: solid transparent 1px;
+	border-top: 1px solid transparent;
+	margin-left: 22.5px;
+	padding-left: 22.5px
 }
 
 /*SOCIAL MEDIA LINKS*/
@@ -312,11 +342,12 @@ nav {
    margin: 20px 0 10px 0
 }
 #social-link {
-	color: var(--active);
-   font-size: 2vw
+	color: var(--alt-link);
+   font-size: 40px;
+   transition: color 0.25s ease
 }
 #social-link:hover {
-	color: #ed8b8b  
+	color: var(--alt-link-hover)
 }
 
 /*Back to top button*/
@@ -336,9 +367,9 @@ nav {
 	z-index: 2;
 	padding: 10px;
 	color: white;
-	background-color: var(--main-dark-bg);
-	-webkit-box-shadow: 0 0 5px 5px var(--main-dark-bg);
-	        box-shadow: 0 0 5px 5px var(--main-dark-bg)
+	background-color: var(--element-bg);
+	-webkit-box-shadow: 0 0 5px 5px var(--element-bg);
+	        box-shadow: 0 0 5px 5px var(--element-bg)
 }
 #backtop:hover {
 	-webkit-animation: Jump 0.5s ease infinite;
@@ -374,13 +405,13 @@ nav {
 
 
 .credits {
-   color: grey;
-   font-size: 0.75vw;
+   color: var(--alt-text)!important;
+   font-size: 12px;
    text-align: center;
    margin-top: 20px
 }
 .fa-external-link-alt {
-	font-size: 0.7vw!important
+	font-size: 13px!important
 }
 .info-link {
 	cursor: help;
@@ -461,16 +492,16 @@ footer>p>.link:hover {
 /*FOOTER*/
 
 #footrow>div>a {
-   font-size: 0.8vw
+   font-size: 14px
 }
 #footrow>div>h6 {
-   font-size: 0.9vw
+   font-size: 20px
 }
 footer {
 	width: 70%;
 	border-radius: 30px 30px 0 0;
-	background-color: var(--main-dark-bg);
-	color: #fff;
+	background-color: var(--element-bg);
+	color: var(--alt-text);
 	margin: auto;
 	padding: 5px 5px 15px 5px;
    position: relative
@@ -478,28 +509,28 @@ footer {
 footer::before {
   content: "";
   position: absolute;
-  
+
   background-color: transparent;
   bottom: 0;
   left: -50px;
   height: 25px;
   width: 50px;
   border-radius: 0 0 30px 0;
-  -webkit-box-shadow: 25px 0 0 0 var(--main-dark-bg);
-          box-shadow: 25px 0 0 0 var(--main-dark-bg)
+  -webkit-box-shadow: 25px 0 0 0 var(--element-bg);
+          box-shadow: 25px 0 0 0 var(--element-bg)
 }
 footer::after {
   content: "";
   position: absolute;
-  
+
   background-color: transparent;
   bottom: 0;
   right: -50px;
   height: 25px;
   width: 50px;
   border-radius: 0 0 0 30px;
-  -webkit-box-shadow: -25px 0 0 0 var(--main-dark-bg);
-          box-shadow: -25px 0 0 0 var(--main-dark-bg)
+  -webkit-box-shadow: -25px 0 0 0 var(--element-bg);
+          box-shadow: -25px 0 0 0 var(--element-bg)
 }
 @media only screen and (max-width: 991px) {
 	#footrow>div {
@@ -507,30 +538,30 @@ footer::after {
 	}
 }
 .foot-div {
-	background-color: #c9c9c9;
+	background-color: var(--alt-text);
    border-radius: 50px;
    height: 3px;
-   box-shadow: 2px 2px 0 0 var(--active)
+   box-shadow: 2px 2px 0 0 var(--alt-link)
 }
 
 /*GRID (basic)*/
 
 .row-div {
-   border-bottom: 2px solid var(--main-dark-bg);
+   border-bottom: 2px solid var(--element-bg);
 }
 #homerow { /*The first row on the "home" page*/
 	margin: 0;
    width: 100%;
    background-color: white;
    padding: 40px;
-   box-shadow: inset 0 0 10px 0 var(--main-dark-bg)
+   box-shadow: inset 0 0 10px 0 var(--element-bg)
 }
 #homerow>div {
    margin: 20px 0 20px 0
 }
 #homerow>div>h1 {
    font-size: 9vw;
-   text-shadow: 0.25vw 0.25vw #6a0000;
+   text-shadow: 0.35vw 0.35vw #6a0000;
 }
 #firstrow { /*The first row*/
 	margin: 50px 30px 30px 50px
@@ -550,7 +581,7 @@ footer::after {
 #side-card {
    background-color: white;
    border-radius: 15px;
-   box-shadow: 0 2px 5px 0 var(--main-dark-bg);
+   box-shadow: 0 2px 5px 0 var(--element-bg);
    padding: 20px
 }
 
@@ -581,12 +612,12 @@ footer::after {
    border-radius: 15px;
 	overflow: hidden;
 	border: none;
-	-webkit-box-shadow: 0 2px 5px 0 var(--main-dark-bg);
-	        box-shadow: 0 2px 5px 0 var(--main-dark-bg)
+	-webkit-box-shadow: 0 2px 5px 0 var(--element-bg);
+	        box-shadow: 0 2px 5px 0 var(--element-bg)
 }
 #article:hover>.card {
-	-webkit-box-shadow: 0 8px 16px 0 var(--main-dark-bg);
-	        box-shadow: 0 8px 16px 0 var(--main-dark-bg)
+	-webkit-box-shadow: 0 8px 16px 0 var(--element-bg);
+	        box-shadow: 0 8px 16px 0 var(--element-bg)
 }
 #article>.card>img {
 	max-height: 250px;
@@ -621,13 +652,26 @@ footer::after {
    background-color: rgba(0,0,250,0.3);
    text-decoration: none
 }
+.article-tag > .green {
+	background-color: transparent;
+   -webkit-transition: background-color 0.25s ease;
+   -o-transition: background-color 0.25s ease;
+   transition: background-color 0.25s ease;
+	color: var(--tag-green);
+	border-radius: 10px;
+	padding: 5px
+}
+.article-tag > .green:hover {
+   background-color: var(--tag-green-bg);
+   text-decoration: none
+}
 .article-tag {
 	float: right;
 }
 .article-title-hr {
 	width: 100%;
 	float: left;
-	border: 3px solid var(--main-dark-bg)
+	border: 3px solid var(--element-bg)
 }
 .article-body {
 	font-family: georgia;
@@ -683,7 +727,7 @@ footer::after {
    position: fixed;
    background-color: #000;
    color: #4F6988;
-   font-size: 1vw;
+   font-size: 15px;
    border: 1px solid #c9c9c9;
    border-radius: 10px;
    height: 50px;
@@ -691,14 +735,14 @@ footer::after {
    width: 50px;
    bottom: 50px;
    left: 50px;
-   -webkit-box-shadow: 0 0 5px 5px var(--main-dark-bg);
-	        box-shadow: 0 0 5px 5px var(--main-dark-bg)
+   -webkit-box-shadow: 0 0 5px 5px var(--element-bg);
+	        box-shadow: 0 0 5px 5px var(--element-bg)
 }
 #lightbutton {
    position: fixed;
    background-color: #c9c9c9;
    border: 1px solid black;
-   font-size: 1vw;
+   font-size: 15px;
    color: #F38235;
    border-radius: 10px;
    height: 50px;
@@ -707,8 +751,8 @@ footer::after {
    bottom: 50px;
    left: 50px;
    display: none;
-   -webkit-box-shadow: 0 0 5px 5px var(--main-dark-bg);
-	        box-shadow: 0 0 5px 5px var(--main-dark-bg)
+   -webkit-box-shadow: 0 0 5px 5px var(--element-bg);
+	        box-shadow: 0 0 5px 5px var(--element-bg)
 }
 #darkbutton:focus, #lightbutton:focus {
    outline: none
