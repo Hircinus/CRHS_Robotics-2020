@@ -7,7 +7,7 @@
       <script src="assets/lazyload.js"></script>
 		<link rel="icon" type="image/png" href="assets/favicon.png">
 		<meta charset="UTF-8">
-		<meta name="description" content="CRHS joins robotics in this year's 2020 CRC robotics competition! This year's theme is ESPN, 
+		<meta name="description" content="CRHS joins robotics in this year's 2020 CRC robotics competition! This year's theme is ESPN,
 		so check it out!">
 		<meta name="keywords" content="CRHS, CRC, Robotics, CRC Robotics, south shore robotics, robotics south shore">
 		<meta name="author" content="Jacob-Mahmoud Alfahad">
@@ -19,7 +19,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</head>
-	<body>
+	<body id="body">
 		<div id="content">
 			<nav class="btmnav">
 				<a class="navbar-brand" href="home"><img src="assets/favicon.png"></a>
@@ -35,9 +35,11 @@
 				<div class="dropdown">
 				  <button id="<?php if($title =='CRHS Robotics 2020 - ESPN Team'){echo 'active';}else{echo '';} ?>" class="dropbtn">Team <i class="fas fa-caret-right"></i></button>
 				  <div class="dropdown-content">
-					<a href="team#">Link 1</a>
-					<a href="team#">Link 2</a>
-					<a href="team#">Link 3</a>
+					<a href="team#">Robot</a>
+					<a href="team#">Kiosk</a>
+					<a href="team#">Video</a>
+					<a href="team#">Web/journalism</a>
+					<a href="team#">Mentors</a>
 				  </div>
 				</div>
             <a id="fr" href="<?php if($title=='CRHS Robotics 2020 - ESPN Home'){echo 'fr/accueil';}if($title=='CRHS Robotics 2020 - ESPN About'){echo 'fr/a_propos';}else{echo '';} ?>">Fran&ccedil;ais</a>
