@@ -20,6 +20,14 @@
 
 /*GENERAL (large bodies)*/
 
+img {
+	-webkit-filter: brightness(80%); /* Safari 6.0 - 9.0 */
+  filter: brightness(80%);
+}
+img:hover {
+	-webkit-filter: brightness(100%); /* Safari 6.0 - 9.0 */
+  filter: brightness(100%);
+}
 html {
    scroll-behavior: smooth
 }
@@ -141,6 +149,7 @@ p, h2, h3, h4, h5, li {
 	padding: 12px 14px;
 	text-decoration: none;
 	display: block;
+	transition: background-color 0.25s ease, color 0.25s ease;
 	font-size: 18px;
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -184,7 +193,8 @@ p, h2, h3, h4, h5, li {
 /*BOTTOMNAV (larger nav that does not move)*/
 
 .btmnav {
-	padding: 20px
+	padding: 20px;
+	border-bottom: #222 solid 2px;
 }
 .btmnav>.navbar-brand>img {
 	height: 50px;
@@ -198,6 +208,7 @@ p, h2, h3, h4, h5, li {
 	font-size: 30px;
 	color: var(--light-accent);
 	float: middle;
+	transition: color 0.25s ease;
 	text-decoration: none;
    border: 1px solid transparent;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -206,6 +217,7 @@ p, h2, h3, h4, h5, li {
 	font-size: 30px;
 	color: var(--light-accent);
 	float: middle;
+	transition: color 0.25s ease;
    border: 1px solid transparent;
    padding: 0;
 	text-decoration: none;
@@ -244,6 +256,7 @@ p, h2, h3, h4, h5, li {
 	margin-left: 24px;
 	color: var(--light-accent);
 	text-decoration: none;
+	transition: color 0.25s ease;
 	font-size: 20px;
    border: 1px solid transparent;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -251,6 +264,7 @@ p, h2, h3, h4, h5, li {
 #navbar>div>button {
 	color: var(--light-accent);
 	padding: 0;
+	transition: color 0.25s ease;
 	font-size: 20px
 }
 #navbar>div>button {
@@ -336,14 +350,14 @@ p, h2, h3, h4, h5, li {
 	position: fixed;
 	right: -100px;
 	bottom: 50px;
-	border: 1px solid var(--body-bg);
+	border: 1px solid #c9c9c9;
 	border-radius: 10px;
 	height: 50px;
 	width: 50px;
 	display: block;
-	-webkit-transition: right 0.3s;
-	-o-transition: right 0.3s;
-	transition: right 0.3s;
+	-webkit-transition: right 0.3s, color 0.3s ease, background-color 0.3s ease;
+	-o-transition: right 0.3s, color 0.3s ease, background-color 0.3s ease;
+	transition: right 0.3s, color 0.3s ease, background-color 0.3s ease;
 	z-index: 2;
 	padding: 10px;
 	color: white;
@@ -352,30 +366,11 @@ p, h2, h3, h4, h5, li {
 	        box-shadow: 0 0 5px 5px var(--element-bg)
 }
 #backtop:hover {
-	-webkit-animation: Jump 0.5s ease infinite;
-	        animation: Jump 0.5s ease infinite
+	color: var(--element-bg);
+	background-color: #c9c9c9
 }
-@-webkit-keyframes Jump {
-	0% {
-		bottom: 50px
-	}
-	50% {
-		bottom: 55px
-	}
-	100% {
-		bottom: 50px
-	}
-}
-@keyframes Jump {
-	0% {
-		bottom: 50px
-	}
-	50% {
-		bottom: 55px
-	}
-	100% {
-		bottom: 50px
-	}
+#backtop:focus {
+	outline: none
 }
 #backtop:focus {
 	outline: none

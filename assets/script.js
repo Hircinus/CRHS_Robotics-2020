@@ -2,7 +2,6 @@ stylesheet = document.getElementById("stylesheet"); // DEFINE STYLESHEET
 lightbutton = document.getElementById("lightbutton"); // DEFINE LIGHT BUTTON
 darkbutton = document.getElementById("darkbutton"); // DEFINE DARK BUTTON
 theme = localStorage.getItem("theme"); // DEFINE THEME IDENTIFIER
-
 // DARK AND LIGHT THEME SWITCH
 function darktheme() {
 	stylesheet.href = "assets/style-dark.css";
@@ -25,12 +24,11 @@ if (localStorage.getItem("theme") === null) {
 else {
 	stylesheet.href = theme; // CALL LOCAL STORAGE AND ASSIGN IT TO THEME
 }
-
 // When the user scrolls down x amount, make navbar appear
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  if (document.body.scrollTop > 105 || document.documentElement.scrollTop > 105) {
     document.getElementById("navbar").style.top = "0";
 	document.getElementById("backtop").style.right = "50px";
   } else {
