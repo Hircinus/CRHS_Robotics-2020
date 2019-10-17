@@ -4,7 +4,7 @@
 		<title><?php echo $title; ?></title>
 		<link type="text/css" rel="stylesheet" id="stylesheet" href="assets/style.css">
 		<script src="assets/script.js"></script>
-      <script src="assets/lazyload.js"></script>
+    <script src="assets/lazyload.js"></script>
 		<link rel="icon" type="image/png" href="assets/favicon.png">
 		<meta charset="UTF-8">
 		<meta name="description" content="CRHS joins robotics in this year's 2020 CRC robotics competition! This year's theme is ESPN,
@@ -22,7 +22,7 @@
 	<body id="body">
 		<div id="content">
 			<nav class="btmnav">
-				<a class="navbar-brand" href="home"><img src="assets/favicon.png"></a>
+				<a class="navbar-brand" title="Go home" href="home"><img src="assets/favicon.png"></a>
 				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN Home'){echo 'active';}else{echo '';} ?>" href="home">Home</a>
 				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN About'){echo 'active';}else{echo '';} ?>" href="about">About</a>
 				<div class="dropdown">
@@ -42,7 +42,7 @@
 					<a href="team#">Mentors</a>
 				  </div>
 				</div>
-            <a id="fr" href="<?php if($title=='CRHS Robotics 2020 - ESPN Home'){echo 'fr/accueil';}if($title=='CRHS Robotics 2020 - ESPN About'){echo 'fr/a_propos';}else{echo '';} ?>">Fran&ccedil;ais</a>
+            <a id="fr" title="Acc&eacute;dez au site en Fran&ccedil;ais" href="<?php if($title=='CRHS Robotics 2020 - ESPN Home'){echo 'fr/accueil';}if($title=='CRHS Robotics 2020 - ESPN About'){echo 'fr/a_propos';}else{echo '';} ?>">Fran&ccedil;ais</a>
 			</nav>
 			<nav id="navbar">
 				<a class="navbar-brand" href="home"><img src="assets/favicon.png"></a>
