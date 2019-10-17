@@ -23,3 +23,5 @@ From there, simply fill in the necessary information, and add the necessary extr
 ## Submitting a pull request
 Coded a new element to the website? Fixed that issue you saw before? Then making a pull request is the next thing to do! 
 Simply go to the **Code** page, and select "Upload files". Then, you can choose the files you wanna upload, and you can add a name and description of what you changed. After, select the radio button to "Create a **new branch**". This will upload your code and open a new pull request: basically its a way to compare your code and the code already on GitHub and for me to check it out and validate it.
+
+After you've sent out a pull request, it'll show up in the **Pull requests** tab, and I'll be able to make sure it's all good. If there's any issue, then I will comment on it whatever the issue is and close the pull request (meaning your code won't override the code already in the repo).
