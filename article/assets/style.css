@@ -95,8 +95,8 @@ p, h2, h3, h4, h5, li {
 /*MEDIA QUERIES*/
 
 @media print {
-	#navbar, #backtop {
-		display: none
+	#navbar, #backtop, #darkbutton, #lightbutton {
+		display: none!important
 	}
 }
 .bg-light-j {
@@ -136,6 +136,7 @@ p, h2, h3, h4, h5, li {
 	color: black;
 	padding: 12px 14px;
 	text-decoration: none;
+	transition: background-color 0.25s ease, color 0.25s ease;
 	display: block;
 	font-size: 18px;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -182,6 +183,7 @@ p, h2, h3, h4, h5, li {
 
 .btmnav {
 	padding: 20px;
+	border-bottom: #222 solid 2px;
 	background-color: transparent
 }
 .btmnav>.navbar-brand>img {
@@ -195,6 +197,7 @@ p, h2, h3, h4, h5, li {
 	margin-left: 45px;
 	font-size: 30px;
 	float: middle;
+	transition: color 0.25s ease;
 	color: var(--light-accent);
 	text-decoration: none;
    border: 1px solid transparent;
@@ -203,6 +206,7 @@ p, h2, h3, h4, h5, li {
 .btmnav>div>button {
 	font-size: 30px;
 	float: middle;
+	transition: color 0.25s ease;
 	color: var(--light-accent);
    border: 1px solid transparent;
    padding: 0;
@@ -241,6 +245,7 @@ p, h2, h3, h4, h5, li {
 #navbar>a, #navbar>div {
 	margin-left: 24px;
 	color: white;
+	transition: color 0.25s ease;
 	text-decoration: none;
 	font-size: 20px;
    border: 1px solid transparent;
@@ -248,6 +253,7 @@ p, h2, h3, h4, h5, li {
 }
 #navbar>div>button {
 	color: white;
+	transition: color 0.25s ease;
 	padding: 0;
 	font-size: 20px
 }
@@ -283,7 +289,7 @@ p, h2, h3, h4, h5, li {
 }
 .btmnav>a:hover, .btmnav>div:hover>button {
 	text-decoration: none;
-	color: #444
+	color: #666
 }
 #navbar>div>button>.fa-caret-right, .btmnav>div>button>.fa-caret-right {
 	-webkit-transform: rotate(0deg);
@@ -361,9 +367,9 @@ p, h2, h3, h4, h5, li {
 	height: 50px;
 	width: 50px;
 	display: block;
-	-webkit-transition: right 0.3s;
-	-o-transition: right 0.3s;
-	transition: right 0.3s;
+	-webkit-transition: right 0.3s, color 0.3s ease, background-color 0.3s ease;
+	-o-transition: right 0.3s, color 0.3s ease, background-color 0.3s ease;
+	transition: right 0.3s, color 0.3s ease, background-color 0.3s ease;
 	z-index: 2;
 	padding: 10px;
 	color: white;
@@ -372,30 +378,8 @@ p, h2, h3, h4, h5, li {
 	        box-shadow: 0 0 5px 5px var(--element-bg)
 }
 #backtop:hover {
-	-webkit-animation: Jump 0.5s ease infinite;
-	        animation: Jump 0.5s ease infinite
-}
-@-webkit-keyframes Jump {
-	0% {
-		bottom: 50px
-	}
-	50% {
-		bottom: 55px
-	}
-	100% {
-		bottom: 50px
-	}
-}
-@keyframes Jump {
-	0% {
-		bottom: 50px
-	}
-	50% {
-		bottom: 55px
-	}
-	100% {
-		bottom: 50px
-	}
+	color: var(--element-bg);
+	background-color: var(--body-bg)
 }
 #backtop:focus {
 	outline: none
