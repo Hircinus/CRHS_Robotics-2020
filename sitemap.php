@@ -5,12 +5,13 @@ require 'layouts/header.php';
 <div id="firstrow" class="row">
 	<div class="col-12">
 		<h1>Sitemap</h1>
+		<hr class="outer-divider">
 	</div>
 </div>
 <div id="row" class="row">
 	<div class="col-lg-4 col-md-6 col-sm-12 col-12">
 		<h2>Main pages</h2>
-		<hr class="row-div">
+		<hr class="inner-divider">
 		<ul>
          <li><a href="home" class="link">Home</a></li>
          <li><a href="about" class="link">About</a></li>
@@ -19,7 +20,7 @@ require 'layouts/header.php';
 	</div>
 	<div class="col-lg-4 col-md-6 col-sm-12 col-12">
       <h2>Articles</h2>
-		<hr class="row-div">
+		<hr class="inner-divider">
 		<ul>
          <li><a href="article/tech" class="link">Tech</a></li>
          <ul>
@@ -37,7 +38,7 @@ require 'layouts/header.php';
 	</div>
    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
       <h2>Other pages</h2>
-		<hr class="row-div">
+		<hr class="inner-divider">
 		<ul>
          <li><a href="message_from_me" class="link">Message</a></li>
          <li><a href="how_to_make_a_site" class="link">How to make a site</a></li>

@@ -20,12 +20,11 @@ require 'layouts/header.php';
 <div id="row" class="row justify-content-center">
    <div id="side-card" class="col-lg-3 col-md-0 col-sm-0 col-0">
       <h3>Some lonks</h3>
-      <ul class="no_bullet">
-         <li><a class="link" href="#">First meeting: what's the game plan?</a></li>
-         <li><a class="link" href="#">Robot team's thoughts</a></li>
-         <li><a class="link" href="#">Video team's thoughts</a></li>
-         <li><a class="link" href="#">Kiosk team's thoughts</a></li>
-      </ul>
+			<hr class="inner-divider">
+      <a class="link" href="#">First meeting: what's the game plan?</a><br>
+      <a class="link" href="#">Robot team's thoughts</a><br>
+      <a class="link" href="#">Video team's thoughts</a><br>
+      <a class="link" href="#">Kiosk team's thoughts</a>
    </div>
 	<div id="article" class="col-lg-6 col-md-9 col-sm-12 col-12">
 		<div class="card">
@@ -57,7 +56,8 @@ require 'layouts/header.php';
 	</div>
    <div id="side-card" class="col-lg-3 col-md-0 col-sm-0 col-0">
       <h3>Did you know?</h3>
-      <p>The CRC Robotics competition has been running for over <i>x</i> years, with CRHS participating for the last <i>y</i> years!</p>
+			<hr class="inner-divider">
+      <p>The CRC has been running for over <strong>19</strong> years, with CRHS participating for the last <strong>5</strong> years!</p>
    </div>
 </div>
 <div id="lastrow" class="row justify-content-center">
