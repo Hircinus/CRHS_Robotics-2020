@@ -1,5 +1,5 @@
 <?php
-$title = "CRHS Robotics 2020 - ESPN Home";
+$title = "Webdev stuff";
 require 'layouts/header.php';
 ?>
 <div id="firstrow" class="row justify-content-around">
