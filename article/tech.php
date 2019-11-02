@@ -5,6 +5,7 @@ require '../layouts/article-header.php';
 <div id="firstrow" class="row">
 	<div class="col-12">
 		<h1>Tech articles</h1>
+		<hr class="outer-divider">
 	</div>
 </div>
 <div id="row" class="row justify-content-center">

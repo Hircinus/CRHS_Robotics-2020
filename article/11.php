@@ -2,6 +2,7 @@
 $title = "Important / Article 11 - CRHS Robotics 2020";
 $tag = "Important";
 $tagsrc = "important";
+$author = 'Jacob Alfahad';
 $topbgimgsrc = 'stock.jpg';
 $articletitle = "Article 11: An Important Article";
 $articlebody = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia lacinia fermentum. Nulla viverra, quam vel fermentum rhoncus, ex mauris posuere est, vitae suscipit felis ante ullamcorper tellus. Donec condimentum mattis dolor, nec mattis nibh vehicula et. Curabitur lectus felis, suscipit blandit massa ac, lobortis rhoncus ipsum. Suspendisse purus metus, elementum eu ligula eu, porttitor luctus elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras gravida, risus consectetur gravida tincidunt, nulla metus luctus risus, ut pharetra nibh orci at neque.
