@@ -18,34 +18,40 @@ require 'layouts/header.php';
 	</div>
 </div>
 <div id="row" class="row justify-content-center">
-   <div id="side-card" class="col-lg-3 col-md-0 col-sm-0 col-0">
+	<div id="side-card" class="col-lg-3 col-md-0 col-sm-0 col-0">
       <h3>Some lonks</h3>
 			<hr class="inner-divider">
       <a class="link" href="#">First meeting: what's the game plan?</a><br>
       <a class="link" href="#">Robot team's thoughts</a><br>
       <a class="link" href="#">Video team's thoughts</a><br>
       <a class="link" href="#">Kiosk team's thoughts</a>
-   </div>
+  </div>
 	<div id="article" class="col-lg-6 col-md-9 col-sm-12 col-12">
 		<div class="card">
-		  <a href="article/01"><img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/stock.jpg" alt="Card image cap"></a>
+		  <a href="article/01"><img class="img-fluid" src="assets/stock.jpg" data-src="assets/stock.jpg" alt="Card image cap"></a>
 		  <div class="card-body tech-article">
-			<a href="article/tech" class="tag">Tech</a>
-			<h5 class="card-title">An article</h5>
-			<p class="card-text">Cool text to make you wanna learn more about something.</p>
-			<a href="article/01" class="link">Keep reading</a>
+				<a href="article/tech" class="tag">Tech</a>
+				<h5 class="card-title">An article</h5>
+				<p class="card-text">Cool text to make you wanna learn more about something.</p>
+				<a href="article/01" class="link">Keep reading</a>
 		  </div>
 		</div>
 	</div>
-   <div class="col-lg-3 col-md-0 col-sm-0 col-0">
-   </div>
+	<div id="side-card" class="col-lg-3 col-md-0 col-sm-0 col-0">
+      <h3>Headlines</h3>
+			<hr class="inner-divider">
+      <a class="link" href="#">A day in the life of: robot team</a><br>
+      <a class="link" href="#">A day in the life of: kiosk team</a><br>
+      <a class="link" href="#">A day in the life of: web team</a><br>
+      <a class="link" href="#">A day in the life of: journalism team</a>
+  </div>
 </div>
 <div id="row" class="row justify-content-center">
    <div class="col-lg-3 col-md-0 col-sm-0 col-0">
    </div>
 	<div id="article" class="col-lg-6 col-md-9 col-sm-12 col-12">
 		<div class="card">
-		  <a href="article/1"><img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/stock.jpg" alt="Card image cap"></a>
+		  <a href="article/1"><img class="img-fluid" src="assets/stock.jpg" data-src="assets/stock.jpg" alt="Card image cap"></a>
 		  <div class="card-body important-article">
 			<a href="article/important" class="tag">Important</a>
 			<h5 class="card-title">An article</h5>
@@ -63,12 +69,12 @@ require 'layouts/header.php';
 <div id="lastrow" class="row justify-content-center">
 	<div id="article" class="col-lg-6 col-md-9 col-sm-12 col-12">
 		<div class="card">
-		  <a href="article/1"><img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/stock.jpg" alt="Card image cap"></a>
+		  <a href="article/1"><img class="img-fluid" src="assets/stock.jpg" data-src="assets/stock.jpg" alt="Card image cap"></a>
 		  <div class="card-body important-article">
-			<a href="article/important" class="tag">Important</a>
-			<h5 class="card-title">An article</h5>
-			<p class="card-text">Cool text to make you wanna learn more about something.</p>
-			<a href="article/11" class="link">Keep reading</a>
+				<a href="article/important" class="tag">Important</a>
+				<h5 class="card-title">An article</h5>
+				<p class="card-text">Cool text to make you wanna learn more about something.</p>
+				<a href="article/11" class="link">Keep reading</a>
 		  </div>
 		</div>
 	</div>
