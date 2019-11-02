@@ -99,7 +99,7 @@ nav {
 
 /* TEXT */
 
-p, h2, h3, h4, h5, li {
+p, h1, h2, h3, h4, h5, li {
    color: var(--text)!important
 }
 
@@ -114,6 +114,32 @@ p, h2, h3, h4, h5, li {
 #firstrow {
 	background-color: var(--body-bg)!important;
 	border-radius: 20px 20px 0 0;
+}
+
+/*TEAM MEMBER PAGES*/
+
+.profile {
+	height: 100px;
+	width: 100px;
+	border: #c9c9c9 solid 2px;
+	background-image: url('../../assets/stock.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	float: left;
+	border-radius: 50%
+}
+
+/*TABLE*/
+
+table {
+	border: 2px solid #c9c9c9;
+	color: #c9c9c9;
+	width: 80%
+}
+td, th {
+	border: 1px solid #c9c9c9;
+	padding: 8px
 }
 
 /*DROPDOWN*/
@@ -378,7 +404,9 @@ p, h2, h3, h4, h5, li {
 
 /*ALL TEXT*/
 
-
+.text-medium {
+	font-size: 18px!important
+}
 .credits {
    color: grey;
    font-size: 12px;
