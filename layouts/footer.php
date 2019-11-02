@@ -27,7 +27,7 @@
          <div class="col-12">
             <ul id="social-nav"class="nav justify-content-center align-items-middle">
                <li class="nav-item">
-                  <a id="social-link" title="Check out CRHS's Facebook page!" class="nav-link" href="https://www.facebook.com/CRHSROBOTICSOFFICIAL/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                  <a id="social-link" title="Check out CRHS's Facebook page!" class="nav-link" href="https://www.facebook.com/CRHSROBOTICSOFFICIAL/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                </li>
                <li class="nav-item">
                  <a id="social-link" title="Check out CRHS's Instagram page!" class="nav-link" href="https://www.instagram.com/crhsrobotics2k20/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -35,6 +35,9 @@
                <li class="nav-item">
                  <a id="social-link" title="Check out CRHS's YouTube page!" class="nav-link" href="https://www.youtube.com/channel/UCWMAQGH2H-f1ipbH2OWfZag" target="_blank"><i class="fab fa-youtube"></i></a>
                </li>
+							 <li class="nav-item">
+ 								 <a id="social-link" title="Check out the CRHS robotics subreddit!" class="nav-link" href="https://www.reddit.com/r/CRHSrobotics/" target="_blank"><i class="fab fa-reddit-alien"></i></a>
+ 							</li>
 			   <li class="nav-item">
                  <a id="social-link" title="Check out the source code for the site!" class="nav-link" href="https://github.com/Hircinus/CRHS_Robotics-2020" target="_blank"><i class="fab fa-github"></i></a>
                </li>

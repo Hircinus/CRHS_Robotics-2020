@@ -35,11 +35,11 @@
 				<div class="dropdown">
 				  <button id="<?php if($title =='CRHS Robotics 2020 - ESPN Team'){echo 'active';}else{echo '';} ?>" class="dropbtn">Team <i class="fas fa-caret-right"></i></button>
 				  <div class="dropdown-content">
-					<a href="../team#">Robot</a>
-					<a href="../team#">Kiosk</a>
-					<a href="../team#">Video</a>
-					<a href="../team#">Web/journalism</a>
-					<a href="../team#">Mentors</a>
+					<a href="../team">Robot</a>
+					<a href="../team">Kiosk</a>
+					<a href="../team">Video</a>
+					<a href="../team">Web/journalism</a>
+					<a href="../team">Mentors</a>
 				  </div>
 				</div>
             <a id="fr" href="<?php if($title=='CRHS Robotics 2020 - ESPN Home'){echo '../fr/accueil';}if($title=='CRHS Robotics 2020 - ESPN About'){echo '../fr/a_propos';}else{echo '';} ?>">Fran&ccedil;ais</a>
@@ -58,9 +58,9 @@
 				<div class="dropdown">
 				  <button id="<?php if($title =='CRHS Robotics 2020 - ESPN Team'){echo 'active';}else{echo '';} ?>" class="dropbtn">Team <i class="fas fa-caret-right"></i></button>
 				  <div class="dropdown-content">
-					<a href="../team#">Link 1</a>
-					<a href="../team#">Link 2</a>
-					<a href="../team#">Link 3</a>
+					<a href="../team">Link 1</a>
+					<a href="../team">Link 2</a>
+					<a href="../team">Link 3</a>
 				  </div>
 				</div>
             <a id="fr" href="<?php if($title=='CRHS Robotics 2020 - ESPN Home'){echo '../fr/accueil';}if($title=='CRHS Robotics 2020 - ESPN About'){echo '../fr/a_propos';}else{echo '';} ?>">Fran&ccedil;ais</a>

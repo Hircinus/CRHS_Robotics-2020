@@ -4,8 +4,8 @@
 			<div class="col-12">
 				<h2 class="article-title"><?php echo $articletitle ?></h2>
 				<h3 class="article-tag"><a href="<?php echo $tagsrc ?>" class="<?php if($tag == 'Tech') { echo 'blue'; } if($tag == 'Important') { echo 'green'; } else { echo ''; } ?>"><?php echo $tag ?></a></h3>
-				<p><em>Jacob Alfahad</em></p>
-            <hr class="article-title-hr">
+				<p><em><?php echo $author ?></em></p>
+        <hr class="article-title-hr">
 			</div>
 		</div>
 		<div id="row" class="row justify-content-center">
