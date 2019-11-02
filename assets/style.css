@@ -104,6 +104,27 @@ p, h2, h3, h4, h5, li {
 	border-radius: 20px 20px 0 0;
 }
 
+/*TEAM MEMBER PAGES*/
+
+.profile {
+	height: 100px;
+	width: 100px;
+	border: #222 solid 2px;
+	background-image: url('../../assets/stock.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	float: left;
+	border-radius: 50%;
+	margin: auto
+}
+
+/*TABLE*/
+
+table {
+	border: 2px solid #222
+}
+
 /*DROPDOWN*/
 
 .dropbtn {
@@ -387,7 +408,9 @@ p, h2, h3, h4, h5, li {
 
 /*ALL TEXT*/
 
-
+.text-medium {
+	font-size: 18px!important
+}
 .credits {
    color: var(--alt-text)!important;
    font-size: 12px;
@@ -587,7 +610,7 @@ footer::after {
 /*GRID (specifics of articles)*/
 
 /*ARTICLE CARD*/
-#article>.card {
+#article>div {
 	-webkit-transition: -webkit-box-shadow 0.25s ease;
 	transition: -webkit-box-shadow 0.25s ease;
 	-o-transition: box-shadow 0.25s ease;
@@ -599,14 +622,15 @@ footer::after {
 	-webkit-box-shadow: 0 2px 5px 0 var(--element-bg);
 	        box-shadow: 0 2px 5px 0 var(--element-bg)
 }
-#article:hover>.card {
+#article:hover>div {
 	-webkit-box-shadow: 0 8px 16px 0 var(--element-bg);
 	        box-shadow: 0 8px 16px 0 var(--element-bg)
 }
-#article>.card>img {
-	max-height: 250px;
-	width: auto
+#article>div>img {
+	width: 100%;
+	heigth: auto
 }
+
 /*ARTICLE PAGE*/
 .parallax {
   height: 500px;
