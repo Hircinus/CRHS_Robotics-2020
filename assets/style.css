@@ -122,7 +122,47 @@ p, h2, h3, h4, h5, li {
 /*TABLE*/
 
 table {
-	border: 2px solid #222
+	border: 2px solid #222;
+	color: #222;
+	width: 80%
+}
+td, th {
+	border: 1px solid #222;
+	padding: 8px
+}
+
+/*SIDEBAR*/
+
+.sidebar {
+	position: fixed;
+	right: 0px;
+	top: 35%;
+	background-color: #222;
+	border-left: solid 1px var(--body-bg);
+	border-top: solid 1px var(--body-bg);
+	border-bottom: solid 1px var(--body-bg);
+	border-radius: 15px 0 0 15px;
+	-webkit-box-shadow: 0 0 5px 5px var(--element-bg);
+	        box-shadow: 0 0 5px 5px var(--element-bg);
+	padding: 8px;
+	word-break: break-all;
+	max-width: 120px
+}
+.sidebar>a {
+	color: #E65F5F;
+	text-decoration: underline;
+	-webkit-text-decoration-color: var(--link-underline-color-light);
+					text-decoration-color: var(--link-underline-color-light);
+	-webkit-transition: -webkit-text-decoration-color 0.25s ease;
+	transition: -webkit-text-decoration-color 0.25s ease;
+	-o-transition: text-decoration-color 0.25s ease;
+	transition: text-decoration-color 0.25s ease;
+	transition: text-decoration-color 0.25s ease, -webkit-text-decoration-color 0.25s ease
+}
+.sidebar>a:hover {
+	-webkit-text-decoration-color: #E65F5F;
+					text-decoration-color: #E65F5F;
+	color: #E65F5F
 }
 
 /*DROPDOWN*/
@@ -157,6 +197,8 @@ table {
 	color: black;
 	padding: 12px 14px;
 	text-decoration: none;
+	-webkit-transition: background-color 0.25s ease, color 0.25s ease;
+	-o-transition: background-color 0.25s ease, color 0.25s ease;
 	transition: background-color 0.25s ease, color 0.25s ease;
 	display: block;
 	font-size: 18px;
@@ -218,6 +260,8 @@ table {
 	margin-left: 45px;
 	font-size: 30px;
 	float: middle;
+	-webkit-transition: color 0.25s ease;
+	-o-transition: color 0.25s ease;
 	transition: color 0.25s ease;
 	color: var(--light-accent);
 	text-decoration: none;
@@ -227,6 +271,8 @@ table {
 .btmnav>div>button {
 	font-size: 30px;
 	float: middle;
+	-webkit-transition: color 0.25s ease;
+	-o-transition: color 0.25s ease;
 	transition: color 0.25s ease;
 	color: var(--light-accent);
    border: 1px solid transparent;
@@ -266,6 +312,8 @@ table {
 #navbar>a, #navbar>div {
 	margin-left: 24px;
 	color: white;
+	-webkit-transition: color 0.25s ease;
+	-o-transition: color 0.25s ease;
 	transition: color 0.25s ease;
 	text-decoration: none;
 	font-size: 20px;
@@ -274,6 +322,8 @@ table {
 }
 #navbar>div>button {
 	color: white;
+	-webkit-transition: color 0.25s ease;
+	-o-transition: color 0.25s ease;
 	transition: color 0.25s ease;
 	padding: 0;
 	font-size: 20px
@@ -371,6 +421,8 @@ table {
 #social-link {
 	color: var(--alt-link);
    font-size: 40px;
+   -webkit-transition: color 0.25s ease;
+   -o-transition: color 0.25s ease;
    transition: color 0.25s ease
 }
 #social-link:hover {
@@ -408,6 +460,15 @@ table {
 
 /*ALL TEXT*/
 
+.filter-button {
+	border-radius: 25px;
+	border: outset var(--link);
+	padding: 2px 5px 2px 5px
+}
+button.toggled {
+	background-color: var(--link);
+	color: var(--body-bg)
+}
 .text-medium {
 	font-size: 18px!important
 }
@@ -450,6 +511,8 @@ table {
    margin: 20px;
    color: var(--link);
    border: 1px solid transparent;
+   -webkit-transition: border 0.35s ease;
+   -o-transition: border 0.35s ease;
    transition: border 0.35s ease;
 }
 .btnlink:hover {
@@ -548,11 +611,15 @@ footer::after {
 	background-color: var(--alt-text);
    border-radius: 50px;
    height: 3px;
-   box-shadow: 2px 2px 0 0 var(--alt-link)
+   -webkit-box-shadow: 2px 2px 0 0 var(--alt-link);
+           box-shadow: 2px 2px 0 0 var(--alt-link)
 }
 
 /*GRID (basic)*/
 
+#important-container, #tech-container {
+	display: block
+}
 .row-div {
    border-bottom: 2px solid var(--element-bg);
 }
@@ -561,7 +628,8 @@ footer::after {
    width: 100%;
    background-color: white;
    padding: 40px;
-   box-shadow: inset 0 0 10px 0 var(--element-bg)
+   -webkit-box-shadow: inset 0 0 10px 0 var(--element-bg);
+           box-shadow: inset 0 0 10px 0 var(--element-bg)
 }
 #homerow>div {
    margin: 20px 0 20px 0
@@ -588,7 +656,8 @@ footer::after {
 #side-card {
    background-color: white;
    border-radius: 15px;
-   box-shadow: 0 2px 5px 0 var(--element-bg);
+   -webkit-box-shadow: 0 2px 5px 0 var(--element-bg);
+           box-shadow: 0 2px 5px 0 var(--element-bg);
    padding: 20px
 }
 
@@ -598,13 +667,15 @@ footer::after {
    background-color: #222;
    border-radius: 50px;
    height: 3px;
-   box-shadow: 2px 2px 0 0 var(--link)
+   -webkit-box-shadow: 2px 2px 0 0 var(--link);
+           box-shadow: 2px 2px 0 0 var(--link)
 }
 .outer-divider {
    background-color: var(--link);
    border-radius: 50px;
    height: 5px;
-   box-shadow: 3px 3px 0 0 #222
+   -webkit-box-shadow: 3px 3px 0 0 #222;
+           box-shadow: 3px 3px 0 0 #222
 }
 
 /*GRID (specifics of articles)*/
