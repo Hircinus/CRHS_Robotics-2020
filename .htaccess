@@ -1,6 +1,7 @@
 # ERROR xxx REDIRECT URL
-ErrorDocument 404 /crhsrobotics2020/error/404
-ErrorDocument 500 /crhsrobotics2020/error/500
+ErrorDocument 404 /404
+ErrorDocument 500 /500
+# Add '/CRHS_robotics-2020' for local hosting
 
 # DEFAULT PAGE
 
