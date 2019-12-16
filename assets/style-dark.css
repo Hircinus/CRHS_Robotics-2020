@@ -40,6 +40,35 @@ body {
 	overflow-x: hidden;
 	background-color: var(--body-bg)!important
 }
+/* COOL TRANSITION EXPERIMENTAL SHIT */
+body > #transition {
+	display: none
+}
+#transition {
+	z-index: 9!important;
+	border-radius: 50%;
+	background-color: #c9c9c9;
+	border: #222 10px solid;
+	position: fixed;
+	left: -500px;
+	bottom: -500px;
+	animation: transitionTheme 1.75s ease
+}
+@keyframes transitionTheme {
+	0% {
+		height: 0;
+		width: 0
+	}
+	75% {
+		height: 2000px;
+		width: 2000px;
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 .content {
    -webkit-animation: fadeIn 0.15s ease forwards;
            animation: fadeIn 0.15s ease forwards;
@@ -142,6 +171,40 @@ td, th {
 	padding: 8px
 }
 
+/*SIDEBAR*/
+
+.sidebar {
+	position: fixed;
+	right: 0px;
+	top: 35%;
+	background-color: #000;
+	border-left: solid 1px #c9c9c9;
+	border-top: solid 1px #c9c9c9;
+	border-bottom: solid 1px #c9c9c9;
+	border-radius: 15px 0 0 15px;
+	-webkit-box-shadow: 0 0 5px 5px var(--element-bg);
+	        box-shadow: 0 0 5px 5px var(--element-bg);
+	padding: 8px;
+	word-break: break-all;
+	max-width: 150px
+}
+.sidebar>a {
+	color: #E65F5F;
+	text-decoration: underline;
+	-webkit-text-decoration-color: var(--link-underline-color-light);
+					text-decoration-color: var(--link-underline-color-light);
+	-webkit-transition: -webkit-text-decoration-color 0.25s ease;
+	transition: -webkit-text-decoration-color 0.25s ease;
+	-o-transition: text-decoration-color 0.25s ease;
+	transition: text-decoration-color 0.25s ease;
+	transition: text-decoration-color 0.25s ease, -webkit-text-decoration-color 0.25s ease
+}
+.sidebar>a:hover {
+	-webkit-text-decoration-color: #E65F5F;
+					text-decoration-color: #E65F5F;
+	color: #E65F5F
+}
+
 /*DROPDOWN*/
 
 .dropbtn {
@@ -175,6 +238,8 @@ td, th {
 	padding: 12px 14px;
 	text-decoration: none;
 	display: block;
+	-webkit-transition: background-color 0.25s ease, color 0.25s ease;
+	-o-transition: background-color 0.25s ease, color 0.25s ease;
 	transition: background-color 0.25s ease, color 0.25s ease;
 	font-size: 18px;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -234,6 +299,8 @@ td, th {
 	font-size: 30px;
 	color: var(--light-accent);
 	float: middle;
+	-webkit-transition: color 0.25s ease;
+	-o-transition: color 0.25s ease;
 	transition: color 0.25s ease;
 	text-decoration: none;
    border: 1px solid transparent;
@@ -243,6 +310,8 @@ td, th {
 	font-size: 30px;
 	color: var(--light-accent);
 	float: middle;
+	-webkit-transition: color 0.25s ease;
+	-o-transition: color 0.25s ease;
 	transition: color 0.25s ease;
    border: 1px solid transparent;
    padding: 0;
@@ -282,6 +351,8 @@ td, th {
 	margin-left: 24px;
 	color: var(--light-accent);
 	text-decoration: none;
+	-webkit-transition: color 0.25s ease;
+	-o-transition: color 0.25s ease;
 	transition: color 0.25s ease;
 	font-size: 20px;
    border: 1px solid transparent;
@@ -290,6 +361,8 @@ td, th {
 #navbar>div>button {
 	color: var(--light-accent);
 	padding: 0;
+	-webkit-transition: color 0.25s ease;
+	-o-transition: color 0.25s ease;
 	transition: color 0.25s ease;
 	font-size: 20px
 }
@@ -364,6 +437,8 @@ td, th {
 #social-link {
 	color: var(--alt-link);
    font-size: 40px;
+   -webkit-transition: color 0.25s ease;
+   -o-transition: color 0.25s ease;
    transition: color 0.25s ease
 }
 #social-link:hover {
@@ -446,6 +521,8 @@ td, th {
    margin: 20px;
    color: var(--link);
    border: 1px solid transparent;
+   -webkit-transition: border 0.35s ease;
+   -o-transition: border 0.35s ease;
    transition: border 0.35s ease;
 }
 .btnlink:hover {
@@ -544,7 +621,8 @@ footer::after {
 	background-color: var(--light-accent);
    border-radius: 50px;
    height: 3px;
-   box-shadow: 2px 2px 0 0 var(--alt-link)
+   -webkit-box-shadow: 2px 2px 0 0 var(--alt-link);
+           box-shadow: 2px 2px 0 0 var(--alt-link)
 }
 
 /*GRID (basic)*/
@@ -557,7 +635,8 @@ footer::after {
    width: 100%;
    background-color: var(--light-accent);
    padding: 40px;
-   box-shadow: inset 0 0 10px 0 var(--element-bg)
+   -webkit-box-shadow: inset 0 0 10px 0 var(--element-bg);
+           box-shadow: inset 0 0 10px 0 var(--element-bg)
 }
 #homerow>div {
    margin: 20px 0 20px 0
@@ -588,7 +667,8 @@ footer::after {
 #side-card {
    background-color: var(--element-bg);
    border-radius: 15px;
-   box-shadow: 0 2px 5px 0 var(--element-bg);
+   -webkit-box-shadow: 0 2px 5px 0 var(--element-bg);
+           box-shadow: 0 2px 5px 0 var(--element-bg);
    padding: 20px
 }
 
@@ -598,13 +678,15 @@ footer::after {
    background-color: var(--light-accent);
    border-radius: 50px;
    height: 3px;
-   box-shadow: 2px 2px 0 0 var(--link)
+   -webkit-box-shadow: 2px 2px 0 0 var(--link);
+           box-shadow: 2px 2px 0 0 var(--link)
 }
 .outer-divider {
    background-color: var(--link);
    border-radius: 50px;
    height: 5px;
-   box-shadow: 3px 3px 0 0 var(--light-accent)
+   -webkit-box-shadow: 3px 3px 0 0 var(--light-accent);
+           box-shadow: 3px 3px 0 0 var(--light-accent)
 }
 
 /*GRID (specifics of articles)*/

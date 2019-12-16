@@ -32,6 +32,35 @@ body {
 	overflow-x: hidden;
 	background-color: var(--body-bg)!important
 }
+/* COOL TRANSITION EXPERIMENTAL SHIT */
+body > #transition {
+	display: none
+}
+#transition {
+	z-index: 9!important;
+	border-radius: 50%;
+	background-color: var(--element-bg);
+	border: #c9c9c9 10px solid;
+	position: fixed;
+	left: -500px;
+	bottom: -500px;
+	animation: transitionTheme 1.75s ease
+}
+@keyframes transitionTheme {
+	0% {
+		height: 0;
+		width: 0
+	}
+	75% {
+		height: 2000px;
+		width: 2000px;
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 .content {
    -webkit-animation: fadeIn 0.15s ease forwards;
            animation: fadeIn 0.15s ease forwards;
@@ -146,7 +175,7 @@ td, th {
 	        box-shadow: 0 0 5px 5px var(--element-bg);
 	padding: 8px;
 	word-break: break-all;
-	max-width: 120px
+	max-width: 150px
 }
 .sidebar>a {
 	color: #E65F5F;
