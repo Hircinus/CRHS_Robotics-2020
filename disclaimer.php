@@ -1,6 +1,6 @@
 <?php
 $title = 'CRHS Robotics 2020 - Disclaimer';
-include 'layouts/header.php';
+require 'layouts/header.php';
 ?>
 <div id="firstrow" class="row justify-content-center">
    <div class="col-lg-10 col-md-11 col-sm-12 col-12">
@@ -22,5 +22,5 @@ include 'layouts/header.php';
    </div>
 </div>
 <?php
-include 'layouts/footer.php';
+require 'layouts/footer.php';
 ?>

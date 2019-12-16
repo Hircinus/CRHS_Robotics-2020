@@ -1,6 +1,6 @@
 <?php
 $title = 'Message from the webmaster';
-include 'layouts/header.php';
+require 'layouts/header.php';
 ?>
 <div id="firstrow" class="row">
 	<div class="col-12">
@@ -11,5 +11,5 @@ include 'layouts/header.php';
 	</div>
 </div>
 <?php
-include 'layouts/footer.php';
+require 'layouts/footer.php';
 ?>

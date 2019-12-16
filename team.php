@@ -1,5 +1,7 @@
 <?php
 $title = "CRHS Robotics 2020 - ESPN Team";
+$sidebar = true;
+$links = array("Robot", "Kiosk", "Video", "Web", "Mentors");
 require 'layouts/header.php';
 ?>
 <div id="firstrow" class="row justify-content-center align-items-center">
@@ -8,25 +10,40 @@ require 'layouts/header.php';
 		<hr class="outer-divider">
 	</div>
 </div>
+<a name="Robot"></a>
 <div id="row" class="row justify-content-center">
-	<table>
-		<thead>
-			<th>Robot</th>
-			<th>Kiosk</th>
-			<th>Programming</th>
-			<th>Web</th>
-			<th>Journalism</th>
-			<th>Mentor</th>
-		<thead>
-		<tr>
-			<td><a href="member/samir" class="link">Samir Baig</a></td>
-			<td><a href="member/marisa" class="link">Marisa Scartozzi</a></td>
-			<td><a href="member/duncan" class="link">Duncan Bruens-Home</a></td>
-			<td><a href="member/jacob" class="link">Jacob Alfahad</a></td>
-			<td><a href="member/Nadia" class="link">Nadia</a></td>
-			<td><a href="member/dobbs" class="link">Mr. Dobbs</a></td>
-		</tr>
-	</table>
+	<div class="col-10">
+		<h2>Robot</h2>
+		<hr class="inner-divider">
+	</div>
+</div>
+<a name="Kiosk"></a>
+<div id="row" class="row justify-content-center">
+	<div class="col-10">
+		<h2>Kiosk</h2>
+		<hr class="inner-divider">
+	</div>
+</div>
+<a name="Video"></a>
+<div id="row" class="row justify-content-center">
+	<div class="col-10">
+		<h2>Video</h2>
+		<hr class="inner-divider">
+	</div>
+</div>
+<a name="Web"></a>
+<div id="row" class="row justify-content-center">
+	<div class="col-10">
+		<h2>Web/Journalism</h2>
+		<hr class="inner-divider">
+	</div>
+</div>
+<a name="Mentors"></a>
+<div id="row" class="row justify-content-center">
+	<div class="col-10">
+		<h2>Mentors</h2>
+		<hr class="inner-divider">
+	</div>
 </div>
 <?php
 require 'layouts/footer.php';

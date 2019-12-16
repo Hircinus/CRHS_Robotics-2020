@@ -3,15 +3,15 @@
 
 C R H S  R O B O T I C S / 2 0 2 0
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-                                                                                                                          
+
 WEB TEAM
-///																														   
+///
 Web designer and developer:
 	Jacob-Mahmoud Alfahad
 
 JOURNALISM TEAM
 ///
-	
+
 MENTORS
 ///
 Web mentor:
@@ -24,16 +24,15 @@ Co-directors of CRHS Robotics:
 	Henrique
 	/
 	Mr. Graham
-	
+
 WORKS ATTRIBUTION
 ///
 This website (http://crhsrobotics2020.000webhostapp.com) was created using the intellectual property of Jacob-Mahmoud Alfahad, /
 the Bootstrap framework (https://getbootstrap.com), W3Schools documentation (https://www.w3schools.com) and various independent sources.
-    
+
 THANKS
 ///
-	Duncan Bruens-Home
-	Briana Gilbert
+	Briana for her love and support throughout the project
 	https://www.w3schools.com (for reference)
 	https://developer.mozilla.org/en-US/ (for reference)
 	https://getbootstrap.com (for framework)
