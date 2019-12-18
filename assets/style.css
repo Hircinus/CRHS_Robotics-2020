@@ -424,6 +424,15 @@ td, th {
 	.btmnav>a:hover, .btmnav>div>button:hover, .btmnav>div:hover {
 		color: #c9c9c9
 	}
+	.btmnav>#fr {
+		border: none!important;
+		margin-left: 0!important;
+		padding-left: 0!important
+	}
+	#navbar>#fr {
+		border: none!important;
+		margin-left: 0!important;
+		padding-left: 0!important
 }
 .btmnav>#fr {
    border-left: 1px solid var(--light-accent);
