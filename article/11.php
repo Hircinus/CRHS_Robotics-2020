@@ -1,7 +1,6 @@
 <?php
 $title = "Important / Article 11 - CRHS Robotics 2020";
 $tag = "Important";
-$tagsrc = "important";
 $author = 'Jacob Alfahad';
 $topbgimgsrc = 'stock.jpg';
 $articletitle = "Article 11: An Important Article";
@@ -15,12 +14,6 @@ Pellentesque bibendum, nisi at lacinia fermentum, elit nisl aliquet erat, et ali
 <br>
 Sed at viverra ligula. Mauris interdum ut tellus at maximus. Vivamus ultricies mi ut lacus semper, ac dignissim eros ullamcorper. Morbi in pellentesque orci. Mauris sed aliquet nunc. Mauris lobortis justo ut nisl lobortis, ac molestie lacus sagittis. Nam dignissim neque non urna pulvinar, quis tempus dui hendrerit. Duis non hendrerit tortor. Donec eget malesuada enim. Proin fermentum aliquam felis vitae egestas.";
 $articlefoot = "The end.<br>Want more? Here's a super generic sigup form!";
-$articlefootlinksrc1 = "../home";
-$articlefootlink1 = "A link.";
-$articlefootlinksrc2 = "../about";
-$articlefootlink2 = "Another link.";
-$articlefootlinksrc3 = "#";
-$articlefootlink3 = "A... link?";
 require '../layouts/article-header.php';
 require '../layouts/article.php';
 ?>
