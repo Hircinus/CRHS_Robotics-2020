@@ -16,19 +16,22 @@ require 'layouts/header.php';
          <li><a href="home" class="link">Home</a></li>
          <li><a href="about" class="link">About</a></li>
          <li><a href="team" class="link">Team</a></li>
-      </ul>
+				 <li><a href="crc" class="link">The CRC</a></li>
+				 <li><a href="robot" class="link">Our robot</a></li>
+    </ul>
 	</div>
 	<div class="col-lg-4 col-md-6 col-sm-12 col-12">
       <h2>Articles</h2>
 		<hr class="inner-divider">
 		<ul>
-         <li><a href="article/tech" class="link">Tech</a></li>
+				<li><a href="articles" class="link">Articles</a></li>
+         <li>Tech</li>
          <ul>
             <li><a href="article/01" class="link">Article 01</a></li>
             <li><a href="article/02" class="link">Article 02</a></li>
             <li><a href="article/03" class="link">Article 03</a></li>
          </ul>
-         <li><a href="article/important" class="link">Important</a></li>
+         <li>Important</li>
          <ul>
             <li><a href="article/11" class="link">Article 11</a></li>
             <li><a href="article/12" class="link">Article 12</a></li>
@@ -40,9 +43,7 @@ require 'layouts/header.php';
       <h2>Other pages</h2>
 		<hr class="inner-divider">
 		<ul>
-         <li><a href="message_from_me" class="link">Message</a></li>
-         <li><a href="how_to_make_a_site" class="link">How to make a site</a></li>
-         <li><a href="sitemap" class="link">Sitemap</a></li>
+         <li><a href="humans.txt" class="link">humans.txt</a></li>
       </ul>
 	</div>
 </div>

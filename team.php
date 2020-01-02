@@ -1,6 +1,5 @@
 <?php
 $title = "CRHS Robotics 2020 - ESPN Team";
-$sidebar = true;
 $links = array("Robot", "Kiosk", "Video", "Web", "Mentors");
 require 'layouts/header.php';
 ?>
@@ -36,6 +35,11 @@ require 'layouts/header.php';
 	<div class="col-10">
 		<h2>Web/Journalism</h2>
 		<hr class="inner-divider">
+		<ul class="no_bullet">
+			<li><a href="member/jacob" class="link">Jacob Alfahad</a></li>
+			<li><a href="member/jovan" class="link">Jovan Gavranovic</a></li>
+			<li><a href="member/eshel" class="link">Eshel</a></li>
+		</ul>
 	</div>
 </div>
 <a name="Mentors"></a>
