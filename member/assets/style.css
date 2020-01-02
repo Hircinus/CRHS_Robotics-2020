@@ -136,10 +136,16 @@ p, h2, h3, h4, h5, li {
 /*TEAM MEMBER PAGES*/
 
 .profile {
-	height: 200px;
-	width: auto;
+	height: 100px;
+	width: 100px;
 	border: #222 solid 2px;
+	background-image: url('../../assets/stock.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	float: left;
 	border-radius: 50%;
+	margin: auto
 }
 
 /*TABLE*/
