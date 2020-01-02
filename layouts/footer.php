@@ -48,9 +48,6 @@
              <li class="nav-item">
                <a id="social-link" title="Check out CRHS's YouTube page!" class="nav-link" href="https://www.youtube.com/channel/UCWMAQGH2H-f1ipbH2OWfZag" target="_blank"><i class="fab fa-youtube"></i></a>
              </li>
-						 <li class="nav-item">
- 							 <a id="social-link" title="Check out the CRHS robotics subreddit!" class="nav-link" href="https://www.reddit.com/r/CRHSrobotics/" target="_blank"><i class="fab fa-reddit-alien"></i></a>
- 						</li>
 			  		<li class="nav-item">
            		<a id="social-link" title="Check out the source code for the site!" class="nav-link" href="https://github.com/Hircinus/CRHS_Robotics-2020" target="_blank"><i class="fab fa-github"></i></a>
             </li>
@@ -60,12 +57,10 @@
           </ul>
          </div>
 		</div>
-      <button id="darkbutton" title="Turn on dark mode" onclick="darktheme()"><i class="fas fa-moon"></i></button>
-      <button id="lightbutton" title="Turn on light mode" onclick="lighttheme()"><i class="fas fa-lightbulb"></i></button>
-      <p class="credits"><em>Website design and development by Jacob Alfahad.</em></p>
+      <p class="credits">Website design and development by <a href="https://github.com/Hircinus" class="link" target="_blank">Jacob Alfahad <i class="fas fa-external-link-alt"></i></a>.</p>
 	</footer>
 	<?php
-	if($sidebar == true) {
+	if(isset($links) == true) {
 		$bar = '<div class="sidebar">';
 		$rows = count($links);
 		for($x = 0; $x <= $rows; $x++) {

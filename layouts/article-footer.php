@@ -47,8 +47,6 @@
 					 </ul>
 			 </div>
 	</div>
-		<button id="darkbutton" title="Turn on dark mode" onclick="darktheme()"><i class="fas fa-moon"></i></button>
-		<button id="lightbutton" title="Turn on light mode" onclick="lighttheme()"><i class="fas fa-lightbulb"></i></button>
 		<p class="credits"><em>Website design and development by Jacob Alfahad.</em></p>
 </footer>
 <button onclick="backToTop()" title="Return to top" id="backtop"><i class="fas fa-caret-up"></i></button>

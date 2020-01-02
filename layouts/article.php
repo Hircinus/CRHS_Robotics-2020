@@ -3,8 +3,8 @@
 		<div id="firstrow" class="row bg-light-j">
 			<div class="col-12">
 				<h2 class="article-title"><?php echo $articletitle ?></h2>
-				<h3 class="article-tag"><a href="<?php echo $tagsrc ?>" class="<?php if($tag == 'Tech') { echo 'blue'; } if($tag == 'Important') { echo 'green'; } else { echo ''; } ?>"><?php echo $tag ?></a></h3>
-				<p><em><?php echo $author ?></em></p>
+				<h3 class="article-tag"><a href="../articles?category=<?php echo strtolower($tag) ?>" class="<?php if($tag == 'Tech') { echo 'blue'; } if($tag == 'Important') { echo 'green'; } else { echo ''; } ?>"><?php echo $tag ?></a></h3>
+				<a class="link" href="../member/<?php echo $authorLink ?>"><?php echo $author ?></a>
         <hr class="article-title-hr">
 			</div>
 		</div>
@@ -14,13 +14,6 @@
 		<div id="lastrow" class="row justify-content-around">
 			<div class="col-6">
 				<p class="article-foot"><?php echo $articlefoot ?></p>
-			</div>
-			<div class="col-6">
-				<ul class="no_bullet">
-					<li><a class="link" href="<?php echo $articlefootlinksrc1 ?>"><?php echo $articlefootlink1 ?></a></li>
-					<li><a class="link" href="<?php echo $articlefootlinksrc2 ?>"><?php echo $articlefootlink2 ?></a></li>
-					<li><a class="link" href="<?php echo $articlefootlinksrc3 ?>"><?php echo $articlefootlink3 ?></a></li>
-				</ul>
 			</div>
 		</div>
 	</div>

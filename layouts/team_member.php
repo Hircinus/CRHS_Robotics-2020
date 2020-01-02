@@ -1,14 +1,16 @@
-<div id="firstrow" class="row">
+<div id="firstrow" class="row align-items-middle">
   <div class="col-2">
-    <div class="profile"></div>
+    <img src="assets/<?php echo $profileLink ?>" class="profile">
   </div>
   <div class="col-10">
     <h1><?php echo $member ?></h1>
     <hr class="outer-divider">
-    <h2 class="text-medium"><?php echo $team ?> &bull; <?php echo $years ?></h2>
+    <h2 class="text-medium"><?php echo $team ?> &bull; <?php echo $years ?> &bull; <?php echo $grade ?></h2>
     <p><?php echo $message ?></p>
   </div>
-  <div class="col-12">
+</div>
+<div id="row" class="row">
+  <div class="col-10">
     <h2 class="text-medium">Teammates</h2>
     <p>
     <?php
