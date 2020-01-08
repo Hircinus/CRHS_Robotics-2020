@@ -92,6 +92,49 @@ nav {
 	margin: 0;
 	background-color: var(--element-bg)
 }
+#banner {
+	position: fixed;
+	border-top: 2px solid var(--body-bg);
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #222;
+	padding: 5px;
+	color: white;
+}
+#banner>p {
+	font-size: 14px!important
+}
+#banner>p>a {
+   color: #E65F5F;
+   text-decoration: underline;
+   -webkit-text-decoration-color: var(--link-underline-color-light);
+           text-decoration-color: var(--link-underline-color-light);
+   -webkit-transition: -webkit-text-decoration-color 0.25s ease;
+   transition: -webkit-text-decoration-color 0.25s ease;
+   -o-transition: text-decoration-color 0.25s ease;
+   transition: text-decoration-color 0.25s ease;
+   transition: text-decoration-color 0.25s ease, -webkit-text-decoration-color 0.25s ease
+}
+#banner>p>a:hover {
+   -webkit-text-decoration-color: #E65F5F;
+           text-decoration-color: #E65F5F;
+   color: #E65F5F
+}
+.banner-button {
+	border-radius: 25px;
+	border: outset #E65F5F;
+	padding: 2px 5px 2px 5px
+}
+.banner-button:hover {
+	background-color: #E65F5F66;
+	color: white
+}
+.banner-button:active {
+	background-color: #E65F5F;
+	border-style: inset;
+	color: white
+}
 p, h2, h3, h4, h5, li {
    color: var(--text)!important
 }
@@ -457,7 +500,7 @@ td, th {
 #backtop {
 	position: fixed;
 	right: -100px;
-	bottom: 50px;
+	bottom: 100px;
 	border: 1px solid var(--body-bg);
 	border-radius: 10px;
 	height: 50px;
@@ -1278,7 +1321,7 @@ footer::after {
 	#backtop {
 		position: fixed;
 		right: -100px;
-		bottom: 50px;
+		bottom: 100px;
 		border: 1px solid #c9c9c9;
 		border-radius: 10px;
 		height: 50px;

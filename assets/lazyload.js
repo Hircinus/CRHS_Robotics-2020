@@ -1,4 +1,4 @@
-//Credit to https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/
+// Credit to https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/
 document.addEventListener("DOMContentLoaded", function() {
   var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));;
 
