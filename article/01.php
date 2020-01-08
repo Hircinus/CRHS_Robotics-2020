@@ -21,9 +21,9 @@ Now that we have chosen the drive system, we are hard at work on making the syst
 and running and working the best that it can be.
 ";
 $articlefoot = "The end.<br>Want more? Here's a super generic sigup form!";
-require '../layouts/article-header.php';
+require '../layouts/header.php';
 require '../layouts/article.php';
 ?>
 <?php
-require '../layouts/article-footer.php';
+require '../layouts/footer.php';
 ?>
