@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<title><?php echo $title; ?></title>
-		<link type="text/css" rel="stylesheet" id="stylesheet" href="assets/style.css">
-    <script src="assets/lazyload.js"></script>
-		<link rel="icon" type="image/png" href="assets/favicon.png">
+		<link type="text/css" rel="stylesheet" href="/crhsrobotics2020/assets/style.css">
+    <script src="/crhsrobotics2020/assets/lazyload.js"></script>
+		<link rel="icon" type="image/png" href="/crhsrobotics2020/assets/favicon.png">
 		<meta charset="UTF-8">
 		<meta name="description" content="CRHS joins robotics in this year's 2020 CRC robotics competition! This year's theme is ESPN,
 		so check it out!">
@@ -22,26 +22,26 @@
 	<div id="transition"></div>
 		<div id="content">
 			<nav class="btmnav">
-				<a class="navbar-brand" title="Go home" href="home"><img src="assets/favicon.png"></a>
-				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN Home'){echo 'active';}else{echo '';} ?>" href="home">Home</a>
-				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN About'){echo 'active';}else{echo '';} ?>" href="about">About</a>
-				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN Articles'){echo 'active';}else{echo '';} ?>" href="articles">Articles</a>
-				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN CRC'){echo 'active';}else{echo '';} ?>" href="crc">The CRC</a>
-				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN Robot'){echo 'active';}else{echo '';} ?>" href="robot">Our robot</a>
+				<a class="navbar-brand" title="Go home" href="/crhsrobotics2020/home"><img src="/crhsrobotics2020/assets/logo.png"></a>
+				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN Home'){echo 'active';}else{echo '';} ?>" href="/crhsrobotics2020/home">Home</a>
+				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN About'){echo 'active';}else{echo '';} ?>" href="/crhsrobotics2020/about">About</a>
+				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN Articles'){echo 'active';}else{echo '';} ?>" href="/crhsrobotics2020/articles">Articles</a>
+				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN CRC'){echo 'active';}else{echo '';} ?>" href="/crhsrobotics2020/crc">The CRC</a>
+				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN Robot'){echo 'active';}else{echo '';} ?>" href="/crhsrobotics2020/robot">Our robot</a>
 				<div class="dropdown">
 				  <button id="<?php if($title =='CRHS Robotics 2020 - ESPN Team'){echo 'active';}else{echo '';} ?>" class="dropbtn">Team <i class="fas fa-caret-right"></i></button>
 				  <div class="dropdown-content">
-					<a href="team#Robot">Robot</a>
-					<a href="team#Kiosk">Kiosk</a>
-					<a href="team#Video">Video</a>
-					<a href="team#Web">Web/journalism</a>
-					<a href="team#Mentors">Mentors</a>
+					<a href="/crhsrobotics2020/team#Robot">Robot</a>
+					<a href="/crhsrobotics2020/team#Kiosk">Kiosk</a>
+					<a href="/crhsrobotics2020/team#Video">Video</a>
+					<a href="/crhsrobotics2020/team#Web">Web/journalism</a>
+					<a href="/crhsrobotics2020/team#Mentors">Mentors</a>
 				  </div>
 				</div>
-        <a id="fr" title="Acc&eacute;dez au site en Fran&ccedil;ais" href="<?php if($title=='CRHS Robotics 2020 - ESPN Home'){echo 'fr/accueil';}if($title=='CRHS Robotics 2020 - ESPN About'){echo 'fr/a_propos';}else{echo '';} ?>">Fran&ccedil;ais</a>
+        <a id="fr" title="Acc&eacute;dez au site en Fran&ccedil;ais" href="<?php echo "fr" . $_SERVER['REQUEST_URI']; ?>">Fran&ccedil;ais</a>
 			</nav>
 			<nav id="navbar">
-				<a class="navbar-brand" href="home"><img src="assets/favicon.png"></a>
+				<a class="navbar-brand" href="/crhsrobotics2020/home"><img src="/crhsrobotics2020/assets/logo.png"></a>
 				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN Home'){echo 'active';}else{echo '';} ?>" href="home">Home</a>
 				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN About'){echo 'active';}else{echo '';} ?>" href="about">About</a>
 				<a id="<?php if($title =='CRHS Robotics 2020 - ESPN Articles'){echo 'active';}else{echo '';} ?>" href="articles">Articles</a>
@@ -50,14 +50,14 @@
 				<div class="dropdown">
 				  <button id="<?php if($title =='CRHS Robotics 2020 - ESPN Team'){echo 'active';}else{echo '';} ?>" class="dropbtn">Team <i class="fas fa-caret-right"></i></button>
 				  <div class="dropdown-content">
-						<a href="team#Robot">Robot</a>
-						<a href="team#Kiosk">Kiosk</a>
-						<a href="team#Video">Video</a>
-						<a href="team#Web">Web/journalism</a>
-						<a href="team#Mentors">Mentors</a>
+						<a href="/crhsrobotics2020/team#Robot">Robot</a>
+						<a href="/crhsrobotics2020/team#Kiosk">Kiosk</a>
+						<a href="/crhsrobotics2020/team#Video">Video</a>
+						<a href="/crhsrobotics2020/team#Web">Web/journalism</a>
+						<a href="/crhsrobotics2020/team#Mentors">Mentors</a>
 				  </div>
 				</div>
-            <a id="fr" href="<?php if($title=='CRHS Robotics 2020 - ESPN Home'){echo 'fr/accueil';}if($title=='CRHS Robotics 2020 - ESPN About'){echo 'fr/a_propos';}else{echo '';} ?>">Fran&ccedil;ais</a>
+            <a id="fr" href="<?php echo "fr" . $_SERVER['REQUEST_URI']; ?>">Fran&ccedil;ais</a>
 			</nav>
-			<script src="assets/script.js"></script>
+			<script src="/crhsrobotics2020/assets/script.js"></script>
 			<div class="content">
