@@ -24,7 +24,7 @@
 				<div class="col-12">
 					<p>We're sorry, we couldn't find what you were looking for. Please try again.</p>
 					<ul>
-						<li><a class="link" href="http://localhost:8888/crhsrobotics2020/home">Go back home</a></li>
+						<li><a class="link" href="/crhsrobotics2020/home">Go back home</a></li> <!-- REMOVE "/crhsrobotics2020" on non-local hosting -->
 						<li><a class="link" href="https://en.wikipedia.org/wiki/HTTP_404">What does "Error 404" mean?</a></li>
 					</ul>
 				</div>

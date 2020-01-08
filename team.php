@@ -14,6 +14,11 @@ require 'layouts/header.php';
 	<div class="col-10">
 		<h2>Robot</h2>
 		<hr class="inner-divider">
+		<ul class="no_bullet">
+			<li><a href="member/adrien" class="link">Adrien</a></li>
+			<li><a href="member/alex" class="link">Alex</a></li>
+			<li><a href="member/charles" class="link">Charles</a></li>
+		</ul>
 	</div>
 </div>
 <a name="Kiosk"></a>
@@ -21,6 +26,11 @@ require 'layouts/header.php';
 	<div class="col-10">
 		<h2>Kiosk</h2>
 		<hr class="inner-divider">
+		<ul class="no_bullet">
+			<li><a href="member/aafreen" class="link">Aafreen</a></li>
+			<li><a href="member/alyha" class="link">Alyha</a></li>
+			<li><a href="member/benjamin_c" class="link">Benjamin C.</a></li>
+		</ul>
 	</div>
 </div>
 <a name="Video"></a>
@@ -28,6 +38,10 @@ require 'layouts/header.php';
 	<div class="col-10">
 		<h2>Video</h2>
 		<hr class="inner-divider">
+		<ul class="no_bullet">
+			<li><a href="member/aidan" class="link">Aidan</a></li>
+			<li><a href="member/amaan" class="link">Amaan</a></li>
+		</ul>
 	</div>
 </div>
 <a name="Web"></a>
@@ -36,9 +50,9 @@ require 'layouts/header.php';
 		<h2>Web/Journalism</h2>
 		<hr class="inner-divider">
 		<ul class="no_bullet">
-			<li><a href="member/jacob" class="link">Jacob Alfahad</a></li>
-			<li><a href="member/jovan" class="link">Jovan Gavranovic</a></li>
-			<li><a href="member/eshel" class="link">Eshel</a></li>
+			<li><a href="member/jacob" class="link">Jacob</a></li>
+			<li><a href="member/jovan" class="link">Jovan</a></li>
+			<li><a href="member/benjamin_z" class="link">Benjamin Z.</a></li>
 		</ul>
 	</div>
 </div>
