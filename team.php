@@ -11,13 +11,19 @@ require 'layouts/header.php';
 </div>
 <a name="Robot"></a>
 <div id="row" class="row justify-content-center">
-	<div class="col-10">
+	<div class="col-9">
 		<h2>Robot</h2>
 		<hr class="inner-divider">
 		<ul class="no_bullet">
 			<li><a href="member/adrien" class="link">Adrien</a></li>
 			<li><a href="member/alex" class="link">Alex</a></li>
+            <li><a href="member/benjamin_c" class='link'>Benjamin C</a></li>
 			<li><a href="member/charles" class="link">Charles</a></li>
+            <li><a href="member/david_m" class="link">David M</a></li>
+            <li><a href="member/filippo" class="link">Filippo</a></li>
+            <li><a href="member/isa" class="link">Isa</a></li>
+            <li><a href="member/joshua" class="link">Joshua</a></li>
+            <li><a href="member/luke" class="link">Luke</a></li>
 		</ul>
 	</div>
 </div>
