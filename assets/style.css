@@ -442,7 +442,7 @@ td, th {
 #navbar>div:hover>button>.fa-caret-right, .btmnav>div:hover>button>.fa-caret-right {
 	-webkit-transform: rotate(90deg);
 	    -ms-transform: rotate(90deg);
-            transform: rotate(90deg)
+            transform: rotate(90deg);
 }
 .btmnav>#fr {
     border-left: 1px solid var(--light-accent);
