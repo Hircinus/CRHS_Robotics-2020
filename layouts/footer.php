@@ -67,7 +67,7 @@
 	if(isset($links) == true) {
 		$bar = '<div class="sidebar">';
 		$rows = count($links);
-		for($x = 0; $x < count($links); $x++) {
+		for($x = 0; $x < $rows; $x++) {
 			$link = $links[$x];
 			$bar .= '<a class="link" href="#' . $link . '">' . $link . '</a>';
 			if($x < $rows) {
