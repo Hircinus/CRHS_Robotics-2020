@@ -67,7 +67,7 @@
 	if(isset($links) == true) {
 		$bar = '<div class="sidebar">';
 		$rows = count($links);
-		for($x = 0; $x <= $rows; $x++) {
+		for($x = 0; $x < $rows; $x++) {
 			$link = $links[$x];
 			$bar .= '<a class="link" href="#' . $link . '">' . $link . '</a>';
 			if($x < $rows) {
@@ -76,7 +76,7 @@
 		}
 		$sidebar_output = $bar . '</div>';
 		echo $sidebar_output;
-	}
+    }
 	?>
 	<script>
 	function dismissBanner() {
