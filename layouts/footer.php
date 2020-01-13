@@ -61,8 +61,8 @@
 	</footer>
 	<button onclick="backToTop()" title="Return to top" id="backtop"><i class="fas fa-caret-up"></i></button>
 	<?php
-	if($_COOKIE['banner'] != true) {
-		echo '<div id="banner"><p class="credits">This site uses cookies to create a better experience for you. By continuing to use our site, you agree to our <a href="privacy_policy" class="link" target="_blank">privacy policy <i class="fas fa-external-link-alt"></i></a>.&emsp;<button class="banner-button" onclick="dismissBanner()">Got it!</button></div>';
+	if(empty($_COOKIE['banner']) || $_COOKIE['banner'] != 'yes') {
+        echo '<div id="banner"><p class="credits">This site uses cookies to create a better experience for you. By continuing to use our site, you agree to our <a href="privacy_policy" class="link" target="_blank">privacy policy <i class="fas fa-external-link-alt"></i></a>.&emsp;<button class="banner-button" onclick="dismissBanner()">Got it!</button></div>';    
 	}
 	if(isset($links) == true) {
 		$bar = '<div class="sidebar">';
