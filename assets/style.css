@@ -424,7 +424,6 @@ td, th {
 	color: #c9c9c9;
 	text-decoration: none
 }
-
 .btmnav>a:hover, .btmnav>div:hover>button {
 	text-decoration: none;
 	color: #666
@@ -442,24 +441,8 @@ td, th {
 #navbar>div:hover>button>.fa-caret-right, .btmnav>div:hover>button>.fa-caret-right {
 	-webkit-transform: rotate(90deg);
 	    -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
+	        transform: rotate(90deg)
 }
-.btmnav>#fr {
-    border-left: 1px solid var(--light-accent);
-    border-right: 1px solid transparent;
-    border-bottom: solid transparent 1px;
-    border-top: 1px solid transparent;
-    margin-left: 22.5px;
-    padding-left: 22.5px
- }
- #navbar>#fr {
-     border-left: 1px solid #c9c9c9;
-     border-right: 1px solid transparent;
-     border-bottom: solid transparent 1px;
-     border-top: 1px solid transparent;
-     margin-left: 22.5px;
-     padding-left: 22.5px
- }
 @media only screen and (max-width: 900px) {
 	.btmnav>a, .btmnav>div>button, .btmnav>div {
 		width: 100%;
@@ -477,17 +460,23 @@ td, th {
 	}
 	.btmnav>a:hover, .btmnav>div>button:hover, .btmnav>div:hover {
 		color: #c9c9c9
-    }
-    .btmnav>#fr {
-		border: none !important;
-		margin-left: 0 !important;
-		padding-left: 0 !important
 	}
-	#navbar>#fr {
-		border: none !important;
-		margin-left: 0 !important;
-		padding-left: 0 !important;
-        }
+}
+.btmnav>#fr {
+   border-left: 1px solid var(--light-accent);
+   border-right: 1px solid transparent;
+   border-bottom: solid transparent 1px;
+   border-top: 1px solid transparent;
+   margin-left: 22.5px;
+   padding-left: 22.5px
+}
+#navbar>#fr {
+	border-left: 1px solid #c9c9c9;
+	border-right: 1px solid transparent;
+	border-bottom: solid transparent 1px;
+	border-top: 1px solid transparent;
+	margin-left: 22.5px;
+	padding-left: 22.5px
 }
 
 /*SOCIAL MEDIA LINKS*/
@@ -1300,6 +1289,22 @@ footer::after {
 		}
 		.btmnav>a:hover, .btmnav>div>button:hover, .btmnav>div:hover {
 			color: var(--light-accent-hover)
+		}
+		.btmnav>#fr {
+			border: none !important;
+		   border-left: 1px solid var(--light-accent);
+			 margin-left: 0 !important;
+		   border-right: 1px solid transparent;
+			 padding-left: 0 !important;
+		   border-bottom: solid transparent 1px;
+			 border-top: 1px solid transparent;
+		}
+			#navbar>#fr {
+		   margin-left: 22.5px;
+			 border: none !important;
+		   padding-left: 22.5px
+			 margin-left: 0 !important;
+			 padding-left: 0 !important;
 		}
 	}
 	#navbar>#fr,.btmnav>#fr {
