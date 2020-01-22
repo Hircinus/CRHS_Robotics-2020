@@ -370,9 +370,51 @@ td, th {
 	height: 30px;
 	width: 30px
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1150px) {
 	#navbar {
 		display: none
+	}
+	.btmnav>a, .btmnav>div>button, .btmnav>div {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		border-bottom: none;
+		margin-left: 0;
+	}
+	.dropdown-content {
+		text-align: center;
+		width: 100%
+	}
+	.btmnav>a, .btmnav>div>button {
+		margin-bottom: 20px
+	}
+	.btmnav>a:hover, .btmnav>div>button:hover, .btmnav>div:hover {
+		color: #c9c9c9
+	}
+	.btmnav>#fr {
+		border: none !important;
+		 border-left: 1px solid var(--light-accent);
+		 margin-left: 0 !important;
+		 border-right: 1px solid transparent;
+		 padding-left: 0 !important;
+		 border-bottom: solid transparent 1px;
+		 border-top: 1px solid transparent;
+	}
+		#navbar>#fr {
+		 margin-left: 22.5px;
+		 border: none !important;
+		 padding-left: 22.5px
+		 margin-left: 0 !important;
+		 padding-left: 0 !important;
+	}
+	#footrow>div {
+		margin-bottom: 30px
+	}
+}
+
+@media only screen and (max-width: 700px){
+	.sidebar{
+		display: none;
 	}
 }
 #navbar>a, #navbar>div {
@@ -443,7 +485,7 @@ td, th {
 	    -ms-transform: rotate(90deg);
 	        transform: rotate(90deg)
 }
-@media only screen and (max-width: 900px) {
+/*@media only screen and (max-width: 900px) {
 	.btmnav>a, .btmnav>div>button, .btmnav>div {
 		width: 100%;
 		display: inline-block;
@@ -477,7 +519,7 @@ td, th {
 		 margin-left: 0 !important;
 		 padding-left: 0 !important;
 	}
-}
+}*/
 .btmnav>#fr {
    border-left: 1px solid var(--light-accent);
    border-right: 1px solid transparent;
@@ -684,11 +726,11 @@ footer::after {
   -webkit-box-shadow: -25px 0 0 0 var(--element-bg);
           box-shadow: -25px 0 0 0 var(--element-bg)
 }
-@media only screen and (max-width: 991px) {
+/*@media only screen and (max-width: 991px) {
 	#footrow>div {
 		margin-bottom: 30px
 	}
-}
+}*/
 .foot-div {
 	background-color: var(--alt-text);
    border-radius: 50px;
