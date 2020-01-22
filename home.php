@@ -20,7 +20,7 @@ require 'layouts/header.php';
 </div>
 -->
 <div id="row" class="row justify-content-center">
-	<div id="side-card" class="col-lg-3 col-md-0 col-sm-0 col-0">
+	<div id="side-card" class="col-lg-3 col-md-6 col-sm-12 col-12">
     <h3>Some lonks</h3>
 		<hr class="inner-divider">
     <a class="link" href="#">First meeting: what's the game plan?</a><br>
@@ -29,7 +29,7 @@ require 'layouts/header.php';
     <a class="link" href="#">Kiosk team's thoughts</a>
   </div>
 	<?php
-	$col = "col-6";
+	$col = "col-lg-6 col-md-6 col-12";
 	$id = "01";
 	$img_alt = "Yeet";
 	$Type = "Tech";
@@ -37,7 +37,7 @@ require 'layouts/header.php';
 	$desc = "A funny title. That's all.";
 	require 'layouts/article-card.php';
 	?>
-	<div id="side-card" class="col-lg-3 col-md-0 col-sm-0 col-0">
+	<div id="side-card" class="col-lg-3 col-md-6 col-sm-0 col-0">
     <h3>Headlines</h3>
 		<hr class="inner-divider">
     <a class="link" href="#">A day in the life of: robot team</a><br>
@@ -47,7 +47,7 @@ require 'layouts/header.php';
   </div>
 </div>
 <div id="row" class="row justify-content-center">
-  <div class="col-lg-3 col-md-0 col-sm-0 col-0">
+  <div class="col-lg-3 col-md-6 col-sm-0 col-0">
   </div>
 	<?php
 	$col = "col-6";
