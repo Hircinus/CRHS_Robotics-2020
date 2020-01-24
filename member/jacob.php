@@ -1,5 +1,5 @@
 <?php
-$title = "Jacob / Web - CRHS Robotics 2020";
+$title = "Jacob : Web/journalism - CRHS Robotics 2020";
 $member = 'Jacob';
 $profileLink = "jacob.jpg";
 $team = 'Web/journalism';
