@@ -48,6 +48,21 @@ require 'layouts/header.php';
         </div>
 	</div>
 </div>
+<a name='Programming'></a>
+<div id="row" class="row justify-content-center list">
+	<div class="col-9">
+		<h2>Programming</h2>
+		<hr class="inner-divider">
+		<div class="row justify-content-center">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+                <ul class="no_bullet">
+                    <li><a href="member/duncan" class="link">Duncan</a></li>
+                </ul>
+            </div>
+            
+        </div>
+	</div>
+</div>
 <a name="Kiosk"></a>
 <div id="row" class="row justify-content-center">
 	<div class="col-9">
