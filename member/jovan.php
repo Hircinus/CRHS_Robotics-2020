@@ -1,12 +1,14 @@
 <?php
-$title = "Jovan Gavranovic / Web - CRHS Robotics 2020";
-$member = 'Jovan Gavranovic';
+$member = 'Jovan';
+$team = 'Web/journalism';
+$title =  "$member : $team - CRHS Robotics 2020";
 $profileLink = "jovan.jpg";
-$team = 'Web';
+$role = "";
 $years = '2<sup>nd</sup> year';
 $grade = "Sec. 4";
-$message = 'Text.';
-require '../layouts/article-header.php';
+$message = "I joined robotics to learn to build websites more efficiently.";
+$number = "#16";
+require '../layouts/header.php';
 require '../layouts/team_member.php';
-require '../layouts/article-footer.php';
+require '../layouts/footer.php';
 ?>
