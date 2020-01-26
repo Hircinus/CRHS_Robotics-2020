@@ -3,8 +3,6 @@ Repository for the CRC Robotics web design and development challenge (2020) unde
 
 [Prototype.](http://crhsrobotics2020.000webhostapp.com)
 
-**Make sure to read [CONTRIBUTING.md](CONTRIBUTING.md) if you wanna contribute.**
-
 For more stuff, check out the [wiki](https://github.com/Hircinus/CRHS_Robotics-2020/wiki).
 
 ---
