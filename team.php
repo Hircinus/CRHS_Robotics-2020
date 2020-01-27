@@ -1,6 +1,6 @@
 <?php
-$title = "CRHS Robotics 2020 - ESPN Team";
-$links = array("Robot", "Kiosk", "Video", "Web", "Mentors");
+$title = "Our team - CRHS Robotics 2020";
+$links = array("Robot", "Kiosk", "Programming", "Video", "Webjournalism", "Mentors");
 require 'layouts/header.php';
 ?>
 <div id="firstrow" class="row justify-content-center align-items-center">
@@ -10,158 +10,400 @@ require 'layouts/header.php';
 	</div>
 </div>
 <a name="Robot"></a>
-<div id="row" class="row justify-content-center list">
-	<div class="col-9">
+<div id="row" class="row justify-content-center">
+	<div class="col-10">
 		<h2>Robot</h2>
 		<hr class="inner-divider">
-		<div class="row justify-content-center">
-            <div class="col-lg-3 col-md-3 col-sm-9 col-9">
-                <ul class="no_bullet">
-                    <li><a href="member/adrien" class="link">Adrien</a></li>
-                    <li><a href="member/alex" class="link">Alex</a></li>
-                    <li><a href="member/benjamin_c" class='link'>Benjamin C.</a></li>
-                    <li><a href="member/charles" class="link">Charles</a></li>
-                    <li><a href="member/david_m" class="link">David M.</a></li>
-                    <li><a href="member/filippo" class="link">Filippo</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-9 col-9">
-                <ul class="no_bullet">
-                    <li><a href="member/isa" class="link">Isa</a></li>
-                    <li><a href="member/joshua" class="link">Joshua</a></li>
-                    <li><a href="member/luke" class="link">Luke</a></li>
-                    <li><a href="member/mallory" class="link">Mallory</a></li>
-                    <li><a href="member/mariam" class="link">Mariam</a></li>
-                    <li><a href="member/muhammad" class="link">Muhammad</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-9 col-9">
-                <ul class="no_bullet">           
-                    <li><a href="member/qasim" class="link">Qasim</a></li>
-                    <li><a href="member/rakesh" class="link">Rakesh</a></li>
-                    <li><a href="member/ravi" class="link">Ravi</a></li>
-                    <li><a href="member/sofia" class="link">Sofia</a></li>
-                    <li><a href="member/tommy" class="link">Tommy</a></li>
-                    <li><a href="member/walid" class="link">Walid</a></li>
-                </ul>
-            </div>
-        </div>
-	</div>
-</div>
-<a name='Programming'></a>
-<div id="row" class="row justify-content-center list">
-	<div class="col-9">
-		<h2>Programming</h2>
-		<hr class="inner-divider">
-		<div class="row justify-content-center">
-            <div class="col-lg-9 col-md-9 col-sm-9 col-9">
-                <ul class="no_bullet">
-                    <li><a href="member/duncan" class="link">Duncan</a></li>
-                </ul>
-            </div>
-            
-        </div>
+		<table class="team_table">
+			<thead>
+				<tr>
+					<td>Name</td>
+					<td>Number</td>
+					<td>Year</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a class="link" href="member/adrien">Adrien</a></td>
+
+					<td>09</td>
+					<td>3<sup>rd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/alex">Alex</a></td>
+
+					<td>21</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/david_m">David M.</a></td>
+
+					<td>72</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/filippo">Filippo</a></td>
+
+					<td>03</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/isa">Isa</a></td>
+
+					<td>14</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/joshua">Joshua</a></td>
+
+					<td>04</td>
+					<td>2<sup>nd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/luke">Luke</a></td>
+
+					<td>18</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/mallory">Mallory</a></td>
+
+					<td>02</td>
+					<td>3<sup>rd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/mariam">Mariam</a></td>
+
+					<td>07</td>
+					<td>3<sup>rd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/muhammad">Muhammad</a></td>
+
+					<td>01</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/qasim">Qasim</a></td>
+
+					<td>07</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/ravi">Ravi</a></td>
+
+					<td>78</td>
+					<td>2<sup>nd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/sofia">Sofia</a></td>
+
+					<td>13</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/tommy">Tommy</a></td>
+
+					<td>05</td>
+					<td>3<sup>rd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/walid_b">Walid B.</a></td>
+
+					<td>20</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
 <a name="Kiosk"></a>
 <div id="row" class="row justify-content-center">
-	<div class="col-9">
+	<div class="col-10">
 		<h2>Kiosk</h2>
 		<hr class="inner-divider">
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-3 col-sm-9 col-9">
-                    <ul class="no_bullet">
-                    <li><a href="member/aafreen" class="link">Aafreen</a></li>
-                    <li><a href="member/alyha" class="link">Alyha</a></li>
-                    <li><a href="member/emily" class="link">Emily</a></li>
-                    <li><a href="member/gabriella" class="link">Gabriella</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-9 col-9">
-                    <ul class="no_bullet">
-                    <li><a href="member/inaya" class="link">Inaya</a></li>
-                    <li><a href="member/jana" class="link">Jana</a></li>
-                    <li><a href="member/letitia" class="link">Letitia</a></li>
-                    <li><a href="member/marisa" class="link">Marisa</a></li>
-                    <li><a href="member/natalia" class="link">Natalia</a></li>
-                    </ul>    
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-9 col-9">
-                  <ul class='no_bullet'>
-                    <li><a href="member/rayann" class="link">Rayann</a></li>
-                    <li><a href="member/shaniya" class="link">Shaniya</a></li>
-                    <li><a href="member/zackary_m" class="link">Zackary M.</a></li>
-                    <li><a href="member/zackary_r" class="link">Zackary R.</a></li>
-                    </ul>
-              </div>
-            </div>
+		<table class="team_table">
+			<thead>
+				<tr>
+					<td>Name</td>
+					<td>Number</td>
+					<td>Year</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a class="link" href="member/aafreen">Aafreen</a></td>
+
+					<td>07</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/Alyha">Alyha</a></td>
+
+					<td>04</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/emily">Emily</a></td>
+
+					<td>24</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/gabriella">Gabriella</a></td>
+
+					<td>20</td>
+					<td>2<sup>nd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/inaya">Inaya</a></td>
+
+					<td>01</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/jana">Jana</a></td>
+
+					<td>03</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/letitia">Letitia</a></td>
+
+					<td>26</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/natalia">Natalia</a></td>
+
+					<td>12</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/marisa">Marisa</a></td>
+
+					<td>11</td>
+					<td>2<sup>nd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/rayann">Rayann</a></td>
+
+					<td>42</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/shaniya">Shaniya</a></td>
+
+					<td>08</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/zackary_m">Zackary M.</a></td>
+
+					<td>70</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/zackary_r">Zackary R.</a></td>
+
+					<td>18</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<a name="Programming"></a>
+<div id="row" class="row justify-content-center">
+	<div class="col-10">
+		<h2>Programming</h2>
+		<hr class="inner-divider">
+		<table class="team_table">
+			<thead>
+				<tr>
+					<td>Name</td>
+					<td>Number</td>
+					<td>Year</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a class="link" href="member/duncan">Duncan</a></td>
+					<td>404</td>
+					<td>3<sup>rd</sup> year</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
 <a name="Video"></a>
 <div id="row" class="row justify-content-center">
-	<div class="col-9">
+	<div class="col-10">
 		<h2>Video</h2>
 		<hr class="inner-divider">
-		<div class="row justify-content-center">
-                <div class="col-lg-3 col-md-3 col-sm-9 col-9">
-                    <ul class="no_bullet">
-                    <li><a href="member/aidan" class="link">Aidan</a></li>
-                    <li><a href="member/brett" class="link">Brett</a></li>
-                    <li><a href="member/derek" class="link">Derek</a></li>
-                    <li><a href="member/diego" class="link">Diego</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-9 col-9">
-                    <ul class="no_bullet">
-                    <li><a href="member/indra" class="link">Indra</a></li>
-                    <li><a href="member/julia" class="link">Julia</a></li>
-                    <li><a href="member/magnus" class="link">Magnus</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-9 col-9">
-                    <ul class="no_bullet">
-                    <li><a href="member/maximus" class="link">Maximus</a></li>
-                    <li><a href="member/nicholas" class="link">Nicholas</a></li>
-                    <li><a href="member/ryan" class="link">Ryan</a></li>
-                    <li><a href="member/samir" class="link">Samir</a></li>
-                    </ul>
-                </div>
-            </div>
+		<table class="team_table">
+			<thead>
+				<tr>
+					<td>Name</td>
+					<td>Number</td>
+					<td>Year</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a class="link" href="member/aidan">Aidan</a></td>
+
+					<td>34</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/brett">Brett</a></td>
+
+					<td>56</td>
+					<td>2<sup>nd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/derek">Derek</a></td>
+
+					<td>06</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/diego">Diego</a></td>
+
+					<td>18</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/indra">Indra</a></td>
+
+					<td>07</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/julia">Julia</a></td>
+
+					<td>27</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/magnus">Magnus</a></td>
+
+					<td>67</td>
+					<td>2<sup>nd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/maximus">Maximus</a></td>
+
+					<td>01</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/nicholas">Nicholas</a></td>
+
+					<td>96</td>
+					<td>2<sup>nd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/ryan">Ryan</a></td>
+
+					<td>02</td>
+					<td>2<sup>nd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/samir">Samir</a></td>
+
+					<td>17</td>
+					<td>3<sup>rd</sup> year</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
-<a name="Web"></a>
+<a name="Webjournalism"></a>
 <div id="row" class="row justify-content-center">
-	<div class="col-9">
+	<div class="col-10">
 		<h2>Web/Journalism</h2>
 		<hr class="inner-divider">
-        <div class='row justify-content-center'>
-        <div class='col-lg-3 col-md-3 col-sm-9 col-9'>
-		<ul class="no_bullet">
-            <li><a href="member/david_l" class="link">David L</a></li>
-            <li><a href="member/benjamin_z" class="link">Benjamin Z.</a></li>
-            </ul>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-9 col-9">  
-            <ul class="no_bullet">
-            <li><a href="member/eshal" class="link">Eshal</a></li>
-			<li><a href="member/jacob" class="link">Jacob</a></li>
-			<li><a href="member/jovan" class="link">Jovan</a></li>
-            </ul>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-9 col-9">
-            <ul class="no_bullet">
-            <li><a href="member/nadia" class="link">Nadia</a></li>
-            <li><a href="member/walid_c" class="link">Walid C.</a></li>
-            </ul>
-        </div>
-        </div>
+		<table class="team_table">
+			<thead>
+				<tr>
+					<td>Name</td>
+					<td>Number</td>
+					<td>Year</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a class="link" href="member/jacob">Jacob</a></td>
+					<td>W-01</td>
+					<td>3<sup>rd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/jovan">Jovan</a></td>
+					<td>16</td>
+					<td>2<sup>nd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/david_l">David L.</a></td>
+					<td>68</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/benjamin_z">Benjamin Z.</a></td>
+					<td>20</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/nadia">Nadia</a></td>
+					<td>04</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/walid_c">Walid C.</a></td>
+					<td>09</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
 <a name="Mentors"></a>
-<div id="row" class="row justify-content-center">
-	<div class="col-9">
+<div id="lastrow" class="row justify-content-center">
+	<div class="col-10">
 		<h2>Mentors</h2>
 		<hr class="inner-divider">
+		<table class="team_table">
+			<thead>
+				<tr>
+					<td>Name</td>
+					<td>Number</td>
+					<td>Year</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a class="link" href="member/dobbs">Dobbs</a></td>
+					<td>01</td>
+					<td>3<sup>rd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/graham">Graham</a></td>
+					<td>XX</td>
+					<td>2<sup>nd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/henrique">Henrique</a></td>
+					<td>XX</td>
+					<td>2<sup>nd</sup> year</td>
+				</tr>
+				<tr>
+					<td><a class="link" href="member/nick">Nick</a></td>
+					<td>XX</td>
+					<td>1<sup>st</sup> year</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
 <?php

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Error 404 - Not Found</title>
-		<link type="text/css" rel="stylesheet" id="stylesheet" href="assets/style.css">
-		<script src="assets/script.js"></script>
+		<title>Error 404 - CRHS Robotics 2020</title>
+		<link type="text/css" rel="stylesheet" id="stylesheet" href="/2020/assets/style.css">
+		<script src="/2020/assets/script.js"></script>
+		<link rel="icon" type="image/png" href="/2020/assets/favicon.png">
 		<meta charset="UTF-8">
 		<meta name="author" content="Jacob-Mahmoud Alfahad">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,11 +25,11 @@
 				<div class="col-12">
 					<p>We're sorry, we couldn't find what you were looking for. Please try again.</p>
 					<ul>
-						<li><a class="link" href="/crhsrobotics2020/home">Go back home</a></li> <!-- REMOVE "/crhsrobotics2020" on non-local hosting -->
+						<li><a class="link" href="/2020/home">Go back home</a></li> <!-- REMOVE "/crhsrobotics2020" on non-local hosting -->
 						<li><a class="link" href="https://en.wikipedia.org/wiki/HTTP_404">What does "Error 404" mean?</a></li>
 					</ul>
 				</div>
 			</div>
 <?php
-require 'layouts/footer.php';
+require '/2020/layouts/footer.php';
 ?>

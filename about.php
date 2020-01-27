@@ -1,5 +1,5 @@
 <?php
-$title = 'CRHS Robotics 2020 - ESPN About';
+$title = 'About us - CRHS Robotics 2020';
 $sidebar = true;
 $links = array("About", "Middle School", "TaG", "French Immersion", "Sports", "Arts", "Student Life");
 require 'layouts/header.php';
@@ -7,8 +7,9 @@ require 'layouts/header.php';
 <a name="About"></a>
 <div id="firstrow" class="row justify-content-center">
    <div class="col-lg-10 col-md-11 col-sm-12 col-12">
-      <h2>About</h2>
+      <h2>About us</h2>
       <hr class="outer-divider">
+      <img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/school.jpg">
       <p>
       Centennial Regional High School (CRHS) is a co-ed athletics institution in the city of Greenfield Park,
       just south of the greatest sport’s capital, Montreal.
@@ -23,7 +24,7 @@ require 'layouts/header.php';
 </div>
 <a name="Middle School"></a>
 <div id="row" class="row justify-content-around">
-   <div class="col-lg-9 col-md-10 col-sm-12 col-12">
+   <div class="col-lg-8 col-md-10 col-sm-12 col-12">
       <h3>Middle School</h3>
       <hr class="inner-divider">
       <p>
@@ -36,10 +37,16 @@ require 'layouts/header.php';
       tutors and are heavily encouraged to participate in a wide assortment of extracurricular activities.
       </p>
    </div>
+   <div class="col-lg-4 col-md-2 col-sm-12 col-12">
+      <img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/middle_school.jpg">
+   </div>
 </div>
 <a name="TaG"></a>
 <div id="row" class="row justify-content-around">
-  <div class="col-lg-9 col-md-10 col-sm-12 col-12">
+  <div class="col-lg-4 col-md-2 col-sm-12 col-12">
+     <img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/tag.jpg">
+  </div>
+  <div class="col-lg-8 col-md-10 col-sm-12 col-12">
     <h3>T.a.G.</h3>
     <hr class="inner-divider">
     <p>
@@ -55,7 +62,7 @@ require 'layouts/header.php';
 </div>
 <a name="French Immersion"></a>
 <div id="row" class="row justify-content-around">
-  <div class="col-lg-9 col-md-10 col-sm-12 col-12">
+  <div class="col-lg-8 col-md-10 col-sm-12 col-12">
     <h3>French Immersion</h3>
     <hr class="inner-divider">
     <p>
@@ -65,10 +72,16 @@ require 'layouts/header.php';
     and Literature. However, the curriculum still includes an English course at the level of your choice.
     </p>
   </div>
+  <div class="col-lg-4 col-md-2 col-sm-12 col-12">
+     <img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/french_immersion.jpg">
+  </div>
 </div>
 <a name="Sports"></a>
 <div id="row" class="row justify-content-around">
-  <div class="col-lg-9 col-md-10 col-sm-12 col-12">
+  <div class="col-lg-4 col-md-2 col-sm-12 col-12">
+     <img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/sports.jpg">
+  </div>
+  <div class="col-lg-8 col-md-10 col-sm-12 col-12">
     <h3>Sports</h3>
     <hr class="inner-divider">
     <p>
@@ -85,7 +98,7 @@ require 'layouts/header.php';
 </div>
 <a name="Arts"></a>
 <div id="row" class="row justify-content-around">
-  <div class="col-lg-9 col-md-10 col-sm-12 col-12">
+  <div class="col-lg-8 col-md-10 col-sm-12 col-12">
     <h3>Arts</h3>
     <hr class="inner-divider">
     <p>
@@ -97,10 +110,16 @@ require 'layouts/header.php';
     including the Follies, Dance Show, Junior Play, Senior Play, and many more!
     </p>
   </div>
+  <div class="col-lg-4 col-md-2 col-sm-12 col-12">
+     <img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/arts.jpg">
+  </div>
 </div>
 <a name="Student Life"></a>
 <div id="row" class="row justify-content-around">
-  <div class="col-lg-9 col-md-10 col-sm-12 col-12">
+  <div class="col-lg-4 col-md-2 col-sm-12 col-12">
+     <img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/student_life.jpg">
+  </div>
+  <div class="col-lg-8 col-md-10 col-sm-12 col-12">
     <h3>Student Life</h3>
     <hr class="inner-divider">
     <p>
