@@ -1,7 +1,7 @@
 # CRHS Robotics 2020
 Repository for the CRC Robotics web design and development challenge (2020) under CRHS. 
 
-[Prototype.](http://crhsrobotics2020.000webhostapp.com)
+[Final version (live)](http://www.crhsrobotics2020.com)
 
 For more stuff, check out the [wiki](https://github.com/Hircinus/CRHS_Robotics-2020/wiki).
 
