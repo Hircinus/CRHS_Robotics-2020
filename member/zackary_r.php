@@ -6,7 +6,7 @@ $profileLink = "zack_r.jpg";
 $role = "";
 $years = '1<sup>st</sup> year';
 $grade = "Sec. 3";
-$message = "Helped with most extra curricular activities.(Camp C and Outreach)";
+$message = "I'm proud for having helped with most extra curricular activities (Camp C and Outreach).";
 $number = "#18";
 require '../layouts/header.php';
 require '../layouts/team_member.php';

@@ -6,7 +6,7 @@ $profileLink = "inaya.jpg";
 $role = "";
 $years = '1<sup>st</sup> year';
 $grade = "Sec. 3";
-$message = "Getting student of the term last year and getting a silver metal every year in science fair. ";
+$message = "I'm proud for getting student of the term last year and getting a silver metal every year in science fair.";
 $number = "#01";
 require '../layouts/header.php';
 require '../layouts/team_member.php';

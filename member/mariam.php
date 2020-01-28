@@ -6,7 +6,7 @@ $profileLink = "mariam.jpg";
 $role = "";
 $years = '3<sup>rd</sup> year';
 $grade = "Sec. 5";
-$message = "I wanted to learn about programming the robot and building it.";
+$message = "I joined because I wanted to learn about programming the robot and building it.";
 $number = "#07";
 require '../layouts/header.php';
 require '../layouts/team_member.php';

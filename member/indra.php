@@ -6,7 +6,7 @@ $profileLink = "indra.jpg";
 $role = "";
 $years = '1<sup>st</sup> year';
 $grade = "Sec. 4";
-$message = "Getting the award of principal's honour role in the academics awards. ";
+$message = "I'm proud for getting the award of principal's honour role in the academics awards.";
 $number = "#07";
 require '../layouts/header.php';
 require '../layouts/team_member.php';

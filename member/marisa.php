@@ -6,7 +6,7 @@ $profileLink = "marisa.jpg";
 $role = "";
 $years = '2<sup>nd</sup> year';
 $grade = "Sec. 5";
-$message = "I started a sock drive in middle school for the homeless.";
+$message = "I'm proud for having started a sock drive in middle school for the homeless.";
 $number = "#11";
 require '../layouts/header.php';
 require '../layouts/team_member.php';

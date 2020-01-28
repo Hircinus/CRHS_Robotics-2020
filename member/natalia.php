@@ -6,7 +6,7 @@ $profileLink = "natalia.jpg";
 $role = "";
 $years = '1<sup>st</sup> year';
 $grade = "Sec. 3";
-$message = "I want to have a big contribution to the kiosk team.";
+$message = "I want to have a big contribution to the kiosk team";
 $number = "#11";
 require '../layouts/header.php';
 require '../layouts/team_member.php';
