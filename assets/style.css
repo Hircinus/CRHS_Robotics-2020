@@ -184,6 +184,29 @@ p, h2, h3, h4, h5, li {
 	border: #222 solid 2px;
 	border-radius: 50%;
 }
+h1 > .id {
+	font-size: 22px;
+	color: #333
+}
+.team_table {
+	margin: auto;
+	border: none
+}
+.team_table > thead > tr > td {
+	border-top: 2px solid #555;
+	border-bottom: 2px solid #555;
+	color: #555
+}
+.team_table > tbody > tr:nth-child(even) {
+	background-color: #eee
+}
+.team_table > tbody > tr:hover {
+	background-color: rgba(0,0,250,0.15)
+}
+.team_table > thead > tr > td, .team_table > tbody > tr > td {
+	border-left: none;
+	border-right: none
+}
 
 /*TABLE*/
 
@@ -212,7 +235,7 @@ td, th {
 	        box-shadow: 0 0 5px 5px var(--element-bg);
 	padding: 8px;
 	word-break: break-all;
-	max-width: 150px
+	max-width: 190px
 }
 .sidebar>a {
 	color: #E65F5F;
@@ -317,14 +340,11 @@ td, th {
 }
 .btmnav>.navbar-brand>img {
 	height: 50px;
-	width: 50px
-}
-.btmnav>div>button {
-	cursor: default
+	width: auto
 }
 .btmnav>a {
-	margin-left: 45px;
-	font-size: 30px;
+	margin-left: 20px;
+	font-size: 25px;
 	float: middle;
 	-webkit-transition: color 0.25s ease;
 	-o-transition: color 0.25s ease;
@@ -335,7 +355,8 @@ td, th {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 .btmnav>div>button {
-	font-size: 30px;
+	cursor: default;
+	font-size: 25px;
 	float: middle;
 	-webkit-transition: color 0.25s ease;
 	-o-transition: color 0.25s ease;
@@ -347,7 +368,7 @@ td, th {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 .btmnav>div {
-	margin-left: 45px;
+	margin-left: 20px;
 	float: middle;
 }
 
@@ -368,7 +389,7 @@ td, th {
 }
 #navbar>.navbar-brand>img {
 	height: 30px;
-	width: 30px
+	width: auto
 }
 @media only screen and (max-width: 1150px) {
 	#navbar {
@@ -380,6 +401,7 @@ td, th {
 		text-align: center;
 		border-bottom: none;
 		margin-left: 0;
+		font-size: 30px;
 	}
 	.dropdown-content {
 		text-align: center;
@@ -411,7 +433,6 @@ td, th {
 		margin-bottom: 30px
 	}
 }
-
 @media only screen and (max-width: 700px){
 	.sidebar{
 		display: none;
@@ -430,14 +451,12 @@ td, th {
 }
 #navbar>div>button {
 	color: white;
+	cursor: default;
 	-webkit-transition: color 0.25s ease;
 	-o-transition: color 0.25s ease;
 	transition: color 0.25s ease;
 	padding: 0;
 	font-size: 20px
-}
-#navbar>div>button {
-	cursor: default
 }
 
 /*ALL NAVBARS*/
@@ -519,7 +538,8 @@ td, th {
 		 margin-left: 0 !important;
 		 padding-left: 0 !important;
 	}
-}*/
+}
+*/
 .btmnav>#fr {
    border-left: 1px solid var(--light-accent);
    border-right: 1px solid transparent;
@@ -557,8 +577,8 @@ td, th {
 
 #backtop {
 	position: fixed;
-	right: -100px;
-	bottom: 100px;
+	right: -50px;
+	bottom: 50px;
 	border: 1px solid var(--body-bg);
 	border-radius: 10px;
 	height: 50px;
@@ -600,7 +620,9 @@ button.toggled {
    color: var(--alt-text)!important;
    font-size: 12px;
    text-align: center;
-   margin-top: 20px
+   margin-top: 20px;
+	 word-wrap: break-word;
+	 word-break: keep-all;
 }
 .fa-external-link-alt {
 	font-size: 13px!important
@@ -847,7 +869,7 @@ footer::after {
    -webkit-transition: background-color 0.25s ease;
    -o-transition: background-color 0.25s ease;
    transition: background-color 0.25s ease;
-	color: darkblue;
+	color: blue;
 	border-radius: 10px;
 	padding: 5px
 }
@@ -860,12 +882,64 @@ footer::after {
    -webkit-transition: background-color 0.25s ease;
    -o-transition: background-color 0.25s ease;
    transition: background-color 0.25s ease;
-	color: var(--tag-green);
+	color: green;
 	border-radius: 10px;
 	padding: 5px
 }
 .article-tag > .green:hover {
-   background-color: var(--tag-green-bg);
+   background-color: rgba(0,250,0,0.3);
+   text-decoration: none
+}
+.article-tag > .orange {
+	background-color: transparent;
+   -webkit-transition: background-color 0.25s ease;
+   -o-transition: background-color 0.25s ease;
+   transition: background-color 0.25s ease;
+	color: orange;
+	border-radius: 10px;
+	padding: 5px
+}
+.article-tag > .orange:hover {
+   background-color: rgba(250,140,0,0.3);
+   text-decoration: none
+}
+.article-tag > .red {
+	background-color: transparent;
+   -webkit-transition: background-color 0.25s ease;
+   -o-transition: background-color 0.25s ease;
+   transition: background-color 0.25s ease;
+	color: red;
+	border-radius: 10px;
+	padding: 5px
+}
+.article-tag > .red:hover {
+   background-color: rgba(250,0,0,0.3);
+   text-decoration: none
+}
+.article-tag > .black {
+	background-color: transparent;
+   -webkit-transition: background-color 0.25s ease;
+   -o-transition: background-color 0.25s ease;
+   transition: background-color 0.25s ease;
+	color: black;
+	border-radius: 10px;
+	padding: 5px
+}
+.article-tag > .black:hover {
+   background-color: rgba(0,0,0,0.3);
+   text-decoration: none
+}
+.article-tag > .purple {
+	background-color: transparent;
+   -webkit-transition: background-color 0.25s ease;
+   -o-transition: background-color 0.25s ease;
+   transition: background-color 0.25s ease;
+	color: rgb(106, 13, 173);
+	border-radius: 10px;
+	padding: 5px
+}
+.article-tag > .purple:hover {
+   background-color: rgba(106, 13, 173, 0.3);
    text-decoration: none
 }
 .article-tag {
@@ -882,20 +956,38 @@ footer::after {
 	line-height: 30px
 }
 
-/*IMPORTANT TAG*/
+/*ARTICLES*/
 
-.important-article {
-	border-top: #00CC00 5px solid
+.personal-article {
+	border-top: green 5px solid
 }
-.important-article>.tag {
+.personal-article>.tag {
 	position: absolute;
 	margin-top: -1.25rem;
 	margin-bottom: 0.75rem;
 	left: 0;
 	border-radius: 0 0 15px 0;
-	background-image: -o-linear-gradient(top, #00CC00, #006600);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#00CC00), to(#006600));
-	background-image: linear-gradient(to bottom, #00CC00, #006600);
+	background-image: -o-linear-gradient(top, green, darkgreen);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(green), to(darkgreen));
+	background-image: linear-gradient(to bottom, green, darkgreen);
+	font-weight: 700;
+	color: white;
+	font-size: 14px;
+	font-family: monospace;
+	padding: 0 10px 0 5px
+}
+.personel-article {
+	border-top: green 5px solid
+}
+.personel-article>.tag {
+	position: absolute;
+	margin-top: -1.25rem;
+	margin-bottom: 0.75rem;
+	left: 0;
+	border-radius: 0 0 15px 0;
+	background-image: -o-linear-gradient(top, green, darkgreen);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(green), to(darkgreen));
+	background-image: linear-gradient(to bottom, green, darkgreen);
 	font-weight: 700;
 	color: white;
 	font-size: 14px;
@@ -903,20 +995,37 @@ footer::after {
 	padding: 0 10px 0 5px
 }
 
-/*TECH TAG*/
-
-.tech-article {
-	border-top: #0339f8 5px solid
+.info-article {
+	border-top: rgb(106, 13, 173) 5px solid
 }
-.tech-article>.tag {
+.info-article>.tag {
 	position: absolute;
 	margin-top: -1.25rem;
 	margin-bottom: 0.75rem;
 	left: 0;
 	border-radius: 0 0 15px 0;
-	background-image: -o-linear-gradient(top, #0339f8, #011353);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#0339f8), to(#011353));
-	background-image: linear-gradient(to bottom, #0339f8, #011353);
+	background-image: -o-linear-gradient(top, rgb(106, 13, 173), rgb(73, 7, 120));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(106, 13, 173)), to(rgb(73, 7, 120)));
+	background-image: linear-gradient(to bottom, rgb(106, 13, 173), rgb(73, 7, 120));
+	font-weight: 700;
+	color: white;
+	font-size: 14px;
+	font-family: monospace;
+	padding: 0 10px 0 5px
+}
+
+.general-article {
+	border-top: red 5px solid
+}
+.general-article>.tag {
+	position: absolute;
+	margin-top: -1.25rem;
+	margin-bottom: 0.75rem;
+	left: 0;
+	border-radius: 0 0 15px 0;
+	background-image: -o-linear-gradient(top, red, rgb(189, 0, 0));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(rgb(189, 0, 0)));
+	background-image: linear-gradient(to bottom, red, rgb(189, 0, 0));
 	font-weight: 700;
 	color: white;
 	font-size: 14px;
