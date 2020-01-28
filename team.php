@@ -113,6 +113,12 @@ require 'layouts/header.php';
 					<td>20</td>
 					<td>1<sup>st</sup> year</td>
 				</tr>
+				<tr>
+					<td><a class="link" href="member/samir">Samir</a></td>
+
+					<td>17</td>
+					<td>3<sup>rd</sup> year</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>
@@ -311,10 +317,10 @@ require 'layouts/header.php';
 					<td>2<sup>nd</sup> year</td>
 				</tr>
 				<tr>
-					<td><a class="link" href="member/samir">Samir</a></td>
+					<td><a class="link" href="member/amaan">Amaan</a></td>
 
-					<td>17</td>
-					<td>3<sup>rd</sup> year</td>
+					<td>99</td>
+					<td>1<sup>st</sup> year</td>
 				</tr>
 			</tbody>
 		</table>
@@ -384,23 +390,23 @@ require 'layouts/header.php';
 			<tbody>
 				<tr>
 					<td><a class="link" href="member/dobbs">Dobbs</a></td>
-					<td>01</td>
-					<td>3<sup>rd</sup> year</td>
+					<td>04</td>
+					<td>6<sup>th</sup> year</td>
 				</tr>
 				<tr>
 					<td><a class="link" href="member/graham">Graham</a></td>
-					<td>XX</td>
-					<td>2<sup>nd</sup> year</td>
+					<td>05</td>
+					<td>6<sup>th</sup> year</td>
 				</tr>
 				<tr>
 					<td><a class="link" href="member/henrique">Henrique</a></td>
-					<td>XX</td>
-					<td>2<sup>nd</sup> year</td>
+					<td>06</td>
+					<td>6<sup>th</sup> year</td>
 				</tr>
 				<tr>
 					<td><a class="link" href="member/nick">Nick</a></td>
-					<td>XX</td>
-					<td>1<sup>st</sup> year</td>
+					<td>07</td>
+					<td>3<sup>rd</sup> year</td>
 				</tr>
 			</tbody>
 		</table>

@@ -34,10 +34,10 @@ require 'layouts/header.php';
        This three-day event hosts much more than just robotics. Teams must:
        <ul>
          <li><a href="#Construct a robot" class="link">Design and construct a robotic athlete;</a></li>
-         <li><a href="#Program the robot" class="link">Program the robot;</li>
+         <li><a href="#Program the robot" class="link">Program the robot;</li>\
+         <li><a href="#Build a kiosk" class="link">Construct a kiosk.</li>
          <li><a href="#Build a website" class="link">Design and code a website;</li>
          <li><a href="#Produce a video" class="link">Produce a video;</li>
-         <li><a href="#Build a kiosk" class="link">Construct a kiosk.</li>
        </ul>
        </p>
     </div>

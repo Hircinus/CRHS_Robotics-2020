@@ -6,7 +6,7 @@ require 'layouts/header.php';
  ?>
  <a name="Conception"></a>
  <div id="row" class="row justify-content-center">
- 	<div class="col-lg-11 col-md-11 col-sm-12 col-12">
+ 	<div class="col-lg-8 col-md-10 col-sm-12 col-12">
     <h2>Robot conception</h2>
     <hr class="outer-divider">
     <p>
@@ -17,13 +17,19 @@ require 'layouts/header.php';
         <li>Can knock down the carriage on the arch actuator;</li>
         <li>Can launch the carriage from the bottom back over the top of the arch.</li>
       </ul>
-      Meet...
+      <strong>Meet: Fallax Rem!</strong>
     </p>
+  </div>
+  <div class="col-lg-4 col-md-2 col-sm-12 col-12">
+     <img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/robot.jpg">
   </div>
 </div>
 <a name="Chassis"></a>
 <div id="row" class="row justify-content-center">
- <div class="col-lg-11 col-md-11 col-sm-12 col-12">
+  <div class="col-lg-4 col-md-2 col-sm-12 col-12">
+     <img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/ae.jpg">
+  </div>
+ <div class="col-lg-8 col-md-10 col-sm-12 col-12">
    <h3>The Chassis</h3>
    <hr class="inner-divider">
    <p>
@@ -33,7 +39,7 @@ require 'layouts/header.php';
 </div>
 <a name="Drive"></a>
 <div id="row" class="row justify-content-center">
- <div class="col-lg-11 col-md-11 col-sm-12 col-12">
+ <div class="col-lg-8 col-md-10 col-sm-12 col-12">
    <h3>The drive system</h3>
    <hr class="inner-divider">
    <p>
@@ -42,10 +48,16 @@ require 'layouts/header.php';
      excellent traction. The Colson wheels are run by two 64:1 banebot motors and are balanced with castors.
    </p>
  </div>
+ <div class="col-lg-4 col-md-2 col-sm-12 col-12">
+    <img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/drive_system.jpg">
+ </div>
 </div>
 <a name="Extendable arm"></a>
 <div id="row" class="row justify-content-center">
- <div class="col-lg-11 col-md-11 col-sm-12 col-12">
+  <div class="col-lg-4 col-md-2 col-sm-12 col-12">
+     <img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/extendable_arm.jpg">
+  </div>
+ <div class="col-lg-8 col-md-10 col-sm-12 col-12">
    <h3>The extendable arm</h3>
    <hr class="inner-divider">
    <p>
@@ -56,13 +68,16 @@ require 'layouts/header.php';
 </div>
 <a name="Rotational Arm"></a>
 <div id="lastrow" class="row justify-content-center">
- <div class="col-lg-11 col-md-11 col-sm-12 col-12">
+ <div class="col-lg-8 col-md-10 col-sm-12 col-12">
    <h3>The rotational arm</h3>
    <hr class="inner-divider">
    <p>
      To attack the carriage on the arch actuator an aluminum extrusion arm was attached to the 12Vdc Drive Electric worm
      gear Motor that can both knock the carriage down from the middle, as well as launch it back over the top.
    </p>
+ </div>
+ <div class="col-lg-4 col-md-2 col-sm-12 col-12">
+    <img class="img-fluid lazy" src="assets/loading.gif" data-src="assets/rotational_arm.jpg">
  </div>
 </div>
 <?php
